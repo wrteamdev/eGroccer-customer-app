@@ -232,13 +232,13 @@
 
 									<li>If you have updated flutter 2.x after upgrade run flutter doctor. and in flutter
 										doctor if you see below error like licence status unknown.</li><br>
-									<img src="images/upgrade1.png" alt="eShop" />
+									<img src="images/upgrade1.png" alt="eGrocer" />
 									<br><br>
 									<li>then go to sdk manager from upar right corner then go to android sdk inside that
 										sdk tools and then uncheck hide obsolute package then check android sdk command
 										line tool latest then apply and then ok. it will download latest version as
 										shown in below fig.</li><br>
-									<img src="images/upgrade2.png" alt="eShop" /><br><br>
+									<img src="images/upgrade2.png" alt="eGrocer" /><br><br>
 									<li>now run flutter doctor again your error will be removed</li>
 
 								</ol>
@@ -253,7 +253,7 @@
 
 								<ol>
 
-									<img src="images/open2.png" alt="eshop" />
+									<img src="images/open2.webp" alt="eGrocer" />
 									<br><br>
 									<li>Go to file > open > then choose your downloaded project location then your
 										project will open.and if you see upar right part 'enable dart support' then
@@ -271,7 +271,7 @@
 									<li>go to android studio in bottom line click on terminal, in terminal write flutter
 										channel.as shown below.</li>
 									<br>
-									<img src="images/ch1.png" alt="eshop" />
+									<img src="images/ch1.png" alt="eGrocer" />
 									<br><br>
 									<li>if your are not in stable then write flutter channel stable</li>
 
@@ -292,17 +292,17 @@
 
 								<ol>
 
-									<img src="images/appname1.png" alt="eshop" />
+									<img src="images/appname1.png" alt="eGrocer" />
 									<br><br>
 									<li>For Android, to change label that is shown below android app icon, open android
 										> app > src > main > open mainfest.xml and inside that label change that string
 										as shown in below fig. </li><br>
-									<img src="images/appname2.png" alt="eShop" />
+									<img src="images/appname2.png" alt="eGrocer" />
 									<br><br>
 									<li>For iOS, to change label that is shown below ios app icon, open ios > Runner >
 										Info.plist inside that <key>CFBundleName</key> change that string as shown in
 										below fig. </li><br>
-									<img src="images/appname3.png" alt="eShop" />
+									<img src="images/appname3.png" alt="eGrocer" />
 
 								</ol>
 								<div class="section_bdr"></div>
@@ -328,7 +328,7 @@
 										run after this step
 									</li><br><br>
 
-									<img src="images/version_1.png" alt="eshop" />
+									<img src="images/version_1.png" alt="eGrocer" />
 									<br><br>
 
 									<li>For iOS</li>
@@ -356,11 +356,11 @@
 
 									<li>For Android, open android > app > src > main > res > mipmap add here your logo
 										according to device screen size </li><br>
-									<img src="images/logo_1.png" alt="eShop" />
+									<img src="images/logo_1.png" alt="eGrocer" />
 									<br><br>
 									<li>For iOS, open ios > Runner > Assets.xcassets > AppIcon.appiconset here you need
 										to put your logo according to diffrent size. </li><br>
-									<img src="images/logo_2.png" alt="eShop" />
+									<img src="images/logo_2.png" alt="eGrocer" />
 
 								</ol>
 								<div class="section_bdr"></div>
@@ -380,7 +380,7 @@
 										this 4 digit.your can change primary,second,fontcolor as shown in below image.
 									</li><br>
 
-									<img src="images/appcolor.png" alt="eShop" />
+									<img src="images/appcolor.png" alt="eGrocer" />
 									<br><br>
 
 
@@ -409,7 +409,7 @@
 									</li>
 									<img src="images/chang_animation_color_step1.jpg"></a>
 									<br><br>
-									<li> Select assets/animation/promocode.json file and open</li>
+									<li> Select eGrocer/assets/coupon.json file and open</li>
 									<img src="images/chang_animation_color_step2.png"></a>
 									<br><br>
 									<li>Follow below image</li>
@@ -457,58 +457,43 @@
 							<div class="container"> <br>
 								<h2>How to change package name</h2>
 								<ol>
-									<li>Press ctrl + shift + F and enter existing package name and change all result
-										which show in search, else you have change it manually buy replace package name
-										in below files.</li>
+									<li>To change package name press ctrl + shift + R and enter or you can have change
+										it manually buy replace package name
+										(Please refer below 2 images images on by one).</li>
 
-									<br>
-									<img src="images/packagename_1.png" alt="eShop" />
-									<br><br>
-
-									<li>android\app\src\debug\AndroidManifest.xml</li><br>
-									<img src="images/packagename_2.png" alt="eShop" />
-									<br><br>
-									<li>android\app\src\main\kotlin\eShop\multivendor\customer\eshop_multivendor\MainActivity.kt
-									</li><br>
-									<img src="images/p3.png" alt="eShop" />
-									<br><br>
+									<img src="images/packagename_1.png" alt="eGrocer" /><br><br>
+									<li>After step 1 follow below image</li>
+									<img src="images/packagename_2.png" alt="eGrocer" /><br><br>
 									<li> When You are changing package name the you also need change name of folders
 										according to your package name in (android\app\src\main\kotlin\) location in
-										project. For Example if PAckage name is "eShop.multivendor.customer" Then inside
-										kotlin folder folder stucture are eshop\multivendor\customer. now this folder
+										project.</li>
+									<br>
+									<li>For Example if Package name is "com.wrteam.egrocer" Then inside kotlin folder
+										folder stucture are com\wrteam\egrocer. now this folder
 										structure will change as per your package name if your package name is
-										"wrteam.eShop.customer" then new folder structure is wrteam\eShop\customer. for
-										change name of this folders just open your project folder navigate inside the
+										"com.wrteam.egrocer" then new folder structure is wrteam\eGrocer\customer.</li>
+									<br>
+									<li>Go to app folder from exploer not from android studio</li>
+									<img src="images/packagename_3.png" alt="eGrocer" /><br><br><br>
+									<li>For change name of this folders just open your project folder navigate inside
+										the
 										kotlin folder just rename the folders according to your package name . Note :
-										(Sometime you got issue dou to this reason.)</li><br>
-									<img src="images/p4.png" alt="eShop" />
-									<br><br>
-									<img src="images/p5.png" alt="eShop" />
+										(Sometime you got issue dou to this reason.)</li>
+									<img src="images/packagename_4.png" alt="eGrocer" /></li>
 									<br><br>
 									<li>Some Doubt regarding package name change <br>
-										1. what if my package name is like this eShop.wrteam.multivendor.customer, so
-										how can i make folder structure ? <br> Ans. => in this situation you have to add
-										one folder according to your package name , now you have 4 folder insode the
-										kotline folder like this \eShop\wrteam\multivendor\customer\ </li><br>
-									<li>android\app\src\main\AndroidManifest.xml</li><br>
-									<img src="images/p6.png" alt="eShop" />
-									<br><br>
-									<li>android\app\src\profile\AndroidManifest.xml</li><br>
-									<img src="images/p7.png" alt="eShop" />
-									<br><br>
-									<li>android\app\build.gradle</li><br>
-									<img src="images/p8.png" alt="eShop" />
-									<br><br>
-
-
-
-									<li>For ios open ios > Runner > info.plist > there is the key CFBundleIdentifier
-										change the string value for that as shown in below</li><br>
-									<img src="images/packagename_6.png" alt="eShop" />
-									<br><br>
-									<li>lib\Helper\Constant.dart </li><br>
-
-									<img src="images/packagename_7.png" alt="eShop" />
+										<ul>
+											<li>What if my package name is like this
+												com.wrteam.egrocer.customer, so
+												how can i make folder structure ?</li>
+											<li><strong>In this situation you have to add
+													one folder according to your package name , now you have 4 folder
+													inside
+													the
+													kotline folder like this
+													\com\wrteam\egrocer\customer</strong></li>
+										</ul>
+									</li><br>
 								</ol>
 								<div class="section_bdr"></div>
 								</ul>
@@ -525,7 +510,7 @@
 									<li>Go to Assets > images folder. here you have 2 folders 1.png 2.svg. you can
 										change your image to exist image with same name.</li><br>
 
-									<img src="images/imageschange.png" alt="eShop" />
+									<img src="images/imageschange.png" alt="eGrocer" />
 									<br><br>
 
 
@@ -546,7 +531,7 @@
 										fill image</li>
 									<li>and if you upload project with all same background then you can set fill image
 										false </li><br>
-									<img src="images/exp.png" alt="eShop" />
+									<img src="images/exp.png" alt="eGrocer" />
 									<br><br>
 
 
@@ -566,7 +551,7 @@
 										as you want
 									</li><br>
 
-									<img src="images/lan2.png" alt="eShop" />
+									<img src="images/lan2.png" alt="eGrocer" />
 									<br><br>
 
 
@@ -596,12 +581,12 @@
 
 										<br>
 
-										<img src="images/lan2.png" alt="eShop" />
+										<img src="images/lan2.png" alt="eGrocer" />
 										<br><br>
 
 										<li>now search in whole project "en", by pressing ctrl shift f. now where you
 											see languge code in list add your new lanaguge code there.</li>
-										<br> <img src="images/lang1.png" alt="eShop" />
+										<br> <img src="images/lang1.png" alt="eGrocer" />
 										<br><br>
 
 										<li>now go to MyProfile.dart file inside that go to initState method inside that
@@ -610,12 +595,12 @@
 											same string name as you have specified in language list in left side.in
 											right side give language name </li>
 										<br>
-										<img src="images/lang2.png" alt="eShop" />
+										<img src="images/lang2.png" alt="eGrocer" />
 										<br><br>
 
 										<li>Add your language name in each and every language file</li>
 										<br>
-										<img src="images/lang3.png" alt="eShop" />
+										<img src="images/lang3.png" alt="eGrocer" />
 										<br><br>
 
 									</ul>
@@ -624,7 +609,7 @@
 									<ul>
 										<li>now search in whole project "en", by pressing ctrl shift f. now where you
 											see languge code in list remove lanaguge code that you don't want.</li>
-										<br> <img src="images/lang1.png" alt="eShop" />
+										<br> <img src="images/lang1.png" alt="eGrocer" />
 										<br><br>
 									</ul>
 								</ol>
@@ -646,7 +631,7 @@
 										have to change default language code "en" to your language code.
 									</li><br>
 
-									<img src="images/applang.png" alt="eShop" />
+									<img src="images/applang.png" alt="eGrocer" />
 									<br><br>
 
 
@@ -670,13 +655,13 @@
 										shown in below image
 									</li><br>
 
-									<img src="images/theme1.png" alt="eShop" />
+									<img src="images/theme1.png" alt="eGrocer" />
 									<br><br>
 									<li>now go to main.dart here in void main() method above runapp you have to add one
 										line and comment above code as shown in below image</li>
 									<br>
 
-									<img src="images/theme2.png" alt="eShop" />
+									<img src="images/theme2.png" alt="eGrocer" />
 									<br><br>
 								</ol>
 								<div class="section_bdr"></div>
@@ -693,7 +678,7 @@
 										pubspec.yaml in font section change your font name as shown in below image.
 									</li><br>
 
-									<img src="images/font.png" alt="eShop" />
+									<img src="images/font.png" alt="eGrocer" />
 									<br><br>
 
 
@@ -714,7 +699,7 @@
 										you have to copy API link as shown in below fig and paste it in app baseURL.
 									</li>
 
-									<img src="images/serverurladmin.png" alt="eShop" />
+									<img src="images/serverurladmin.png" alt="eGrocer" />
 									<br><br>
 
 									<li>Go to lib > helper > constant.dart. here you have to change your API server url.
@@ -722,7 +707,7 @@
 									<b>don't forget to add slash after api keyword </b>
 									<br>
 
-									<img src="images/serverurl.png" alt="eShop" />
+									<img src="images/serverurl.png" alt="eGrocer" />
 									<br><br>
 
 
@@ -742,13 +727,13 @@
 										you have to copy secret key as shown in below fig and paste it in app jwt key.
 									</li>
 
-									<img src="images/jwtadmin.png" alt="eShop" />
+									<img src="images/jwtadmin.png" alt="eGrocer" />
 									<br><br>
 
 									<li>Go to lib > helper > constant.dart. here you have to change your JWT Key.
 									</li><br>
 
-									<img src="images/jwt.png" alt="eShop" />
+									<img src="images/jwt.png" alt="eGrocer" />
 									<br><br>
 
 
@@ -769,7 +754,7 @@
 									<li>Go to firebase console.and then click on add project.</li><br>
 
 
-									<img src="images/fcm1.png" alt="eShop" />
+									<img src="images/fcm1.png" alt="eGrocer" />
 									<br><br>
 									<li>after that below given step will come. here you have to enter your project
 										details.Enter your project name and then press on continue.then select email and
@@ -777,43 +762,43 @@
 									><br>
 
 
-									<img src="images/fcm2.png" alt="eShop" />
+									<img src="images/fcm2.png" alt="eGrocer" />
 									<br><br>
 									<li>after that your project is created</li><br>
 
-									<img src="images/fcm3.png" alt="eShop" />
+									<img src="images/fcm3.png" alt="eGrocer" />
 									<br><br>
 									<li>For android,now first click on android</li><br>
 
-									<img src="images/fcm4.png" alt="eShop" />
+									<img src="images/fcm4.png" alt="eGrocer" />
 									<br><br>
 									<li>after that below given screen will appear, in that you have to enter your
 										packagename and appname.and then click register app.</li><br>
 
-									<img src="images/fcm5.png" alt="eShop" />
+									<img src="images/fcm5.png" alt="eGrocer" />
 									<br><br>
 
 									<li>after that below given screen will appear, now click on download
 										google-services.json.after that open the file and copy content of file and
 										replace in android > app > google-service.son.</li><br>
 
-									<img src="images/fcm6.png" alt="eShop" /><br>
+									<img src="images/fcm6.png" alt="eGrocer" /><br>
 
-									<img src="images/fcm7.png" alt="eShop" /><br><br>
+									<img src="images/fcm7.png" alt="eGrocer" /><br><br>
 									<li>now click on next next and in last step press continue to the console button.
 									</li>
 
 									<li>for ios,perform below step. now click on add app.</li><br>
-									<img src="images/fcm8.png" alt="eShop" /><br><br>
+									<img src="images/fcm8.png" alt="eGrocer" /><br><br>
 									<li>and then click on ios button.in this same as android step will be come here you
 										have to enter your appname.then next and on next screen download google service
 										info.plist file.</li <br>
 
-									<img src="images/fcm9.png" alt="eShop" /><br><br>
+									<img src="images/fcm9.png" alt="eGrocer" /><br><br>
 									<li>now copy the content of that file and replace in ios > Runner >
 										GoogleServie-info.plist </li>
 									<br>
-									<img src="images/fcm10.png" alt="eShop" /><br><br>
+									<img src="images/fcm10.png" alt="eGrocer" /><br><br>
 									<li>now press next next on firebase console and that's it your project is created on
 										ios.</li>
 								</ol>
@@ -877,8 +862,8 @@
 										<li>go to run and type cmd</li>
 										<li>here first go to java jdk bin path</li>
 										<li>then here edit this command and replace your keystore path and alias in this
-											command <b>keytool -list -v -keystore "D:\keystore\eShop.jks" -alias
-												eShop</b>
+											command <b>keytool -list -v -keystore "D:\keystore\eGrocer.jks" -alias
+												eGrocer</b>
 										</li>
 										<li>then it will ask for password.enter and then it will show your release sha
 										</li>
@@ -1082,14 +1067,14 @@
 									</li>
 									<li>For creating a domain for the link, click on the Get Started button.</li>
 									<br>
-									<img src="images/link1.png" alt="eShop" /><br><br>
+									<img src="images/link1.png" alt="eGrocer" /><br><br>
 									<li>Then, create a URL prefix. A URL prefix is a domain name that uses the dynamic
 										links.</li>
 									<li>Create a domain or use the google provided domain and press the continue button
 										as shown in image below. you can use yourappname.page.link which is unique and
 										available.you can also choose from below suggestion.</li>
 									<br>
-									<img src="images/link2.png" alt="eShop" />
+									<img src="images/link2.png" alt="eGrocer" />
 
 
 									<br><br>
@@ -1100,15 +1085,15 @@
 										page.link.ex. test.page.link </li>
 									<br>
 
-									<img src="images/link8.png" alt="eShop" /><br><br>
+									<img src="images/link8.png" alt="eGrocer" /><br><br>
 									<li>Now copy your url prefix and paste in constant file as shown below. </li>
 
 									<br>
-									<img src="images/link3.png" alt="eShop" /><br><br>
+									<img src="images/link3.png" alt="eGrocer" /><br><br>
 
 
 									<br>
-									<img src="images/link4.png" alt="eShop" /><br><br>
+									<img src="images/link4.png" alt="eGrocer" /><br><br>
 									<li>Now for ios below step is needed</li>
 									<ul>In the Info tab of your iOS app's Xcode project:
 										<li>Create a new URL Type to be used for Dynamic Links.
@@ -1116,14 +1101,14 @@
 											your bundle identifier, which is the default URL scheme used by Dynamic
 											Links.</li>
 										<br>
-										<img src="images/link5.png" alt="eShop" /><br><br>
+										<img src="images/link5.png" alt="eGrocer" /><br><br>
 
 										<li>In the Capabilities tab of your app's Xcode project, enable Associated
 											Domains and add the following to the Associated Domains list:
 											applinks:YOUR_URL_PREFIX
 											Remember not to include https:// or any slashes or paths in your prefix</li>
 										<br>
-										<img src="images/link6.png" alt="eShop" /><br><br>
+										<img src="images/link6.png" alt="eGrocer" /><br><br>
 									</ul>
 								</ol>
 
@@ -1143,25 +1128,25 @@
 									</li>
 									<li>
 										Click on console.
-										<img src="images/mapAPI1.png" alt="eShop" />
+										<img src="images/mapAPI1.png" alt="eGrocer" />
 										<br><br>
 									</li>
 
 									<li>
 										Select your Firebase Project
-										<img src="images/mapAPI2.png" alt="eShop" />
+										<img src="images/mapAPI2.png" alt="eGrocer" />
 										<br><br>
 									</li>
 									<li>
 
 										Search for APIs, which are shown in below image.
-										<img src="images/mapAPI3.png" alt="eShop" />
+										<img src="images/mapAPI3.png" alt="eGrocer" />
 										<br><br>
 									</li>
 
 									<li>
 										Click on Enable to, enable that APIs
-										<img src="images/mapAPI4.png" alt="eShop" />
+										<img src="images/mapAPI4.png" alt="eGrocer" />
 										<br><br>
 									</li>
 
@@ -1169,12 +1154,12 @@
 									<li>
 										Do above steps for below listed API. (enable all below APIs one by one by
 										searching)
-										<img src="images/mapAPI5.png" alt="eShop" />
+										<img src="images/mapAPI5.png" alt="eGrocer" />
 										<br><br>
 									</li>
 									<li>
 										Go to Credential Tab. you will find your Androiod and iOS API keys.
-										<img src="images/mapAPI6.png" alt="eShop" />
+										<img src="images/mapAPI6.png" alt="eGrocer" />
 										<br><br>
 									</li>
 									<li>
@@ -1206,7 +1191,7 @@
 											Maps
 											API registration process.<br><br>
 
-											<img src="images/mapAPI7.png" alt="eShop" />
+											<img src="images/mapAPI7.png" alt="eGrocer" />
 											<br><br>
 											<li> <b>iOS Setup</b>
 												<ul>
@@ -1223,7 +1208,7 @@
 									</li>
 									<b>Note</b>: Again, for the value field please paste in your API Key from the
 									registration process.<br><br>
-									<img src="images/mapAPI8.png" alt="eShop" />
+									<img src="images/mapAPI8.png" alt="eGrocer" />
 
 								</ol>
 								<div class="section_bdr"></div>
@@ -1349,7 +1334,7 @@
 									<li>You can change or add api parameter from lib > Helper > String.dart. here all
 										list of api and api paramater is listed that is used in app.</li>
 									<br>
-									<img src="images/api.png" alt="eShop" /><br><br>
+									<img src="images/api.png" alt="eGrocer" /><br><br>
 								</ol>
 
 								<p> </p>
@@ -1375,19 +1360,19 @@
                                             generate release apk from that new module.</li>
     
                                         <br>
-                                        <img src="images/apk1.png" alt="eShop" /><br><br>
+                                        <img src="images/apk1.png" alt="eGrocer" /><br><br>
     
     
                                         <li>and if in your android studio if flutter option is disable then go to file
                                             option in your android studio inside open then locate your flutter project's
                                             android module and open it.now generate relase apk from that new module.</li>
                                         <br>
-                                        <img src="images/apk2.png" alt="eShop" /><br><br>
-                                        <img src="images/apk3.png" alt="eShop" /><br><br>
+                                        <img src="images/apk2.png" alt="eGrocer" /><br><br>
+                                        <img src="images/apk3.png" alt="eGrocer" /><br><br>
                                         <li>In Build menu there is option generate signed bundle/apk.</li>
     
                                         <br>
-                                        <img src="images/apk4.png" alt="eShop" /><br><br>
+                                        <img src="images/apk4.png" alt="eGrocer" /><br><br>
     
     
                                     </ul>
@@ -1413,9 +1398,9 @@
 											</li>
 
 										</ul>
-										<img src="images/modifyPath.png" alt="eShop" /><br><br>
-										<img src="images/remeberPassword.png" alt="eShop" /><br><br>
-										<img src="images/success.png" alt="eShop" /><br><br>
+										<img src="images/modifyPath.png" alt="eGrocer" /><br><br>
+										<img src="images/remeberPassword.png" alt="eGrocer" /><br><br>
+										<img src="images/success.png" alt="eGrocer" /><br><br>
 
 									</li>
 
@@ -1427,7 +1412,7 @@
 
 
 
-										<img src="images/createfile.png" alt="eShop" /><br><br>
+										<img src="images/createfile.png" alt="eGrocer" /><br><br>
 
 										Copy below code, Paste in to key.propertirs file and change as per shown in
 										image.<br><br>
@@ -1437,7 +1422,7 @@
 												keyAlias=upload <br>
 												storeFile=location of the key store file, such as /Users/user
 												name/upload-keystore.jks<br><br>
-												<img src="images/setPath.png" alt="eShop" /><br><br>
+												<img src="images/setPath.png" alt="eGrocer" /><br><br>
 
 
 									</li>
@@ -1459,7 +1444,7 @@
 												}<br><br>
 
 
-												<img src="images/codeBlock1.png" alt="eShop" /><br><br>
+												<img src="images/codeBlock1.png" alt="eGrocer" /><br><br>
 											</li>
 											<li>
 												Find the buildTypes block:<br>
@@ -1480,7 +1465,7 @@
 												}<br>
 												}<br> <br>
 
-												<img src="images/codeBlock2.png" alt="eShop" /><br><br>
+												<img src="images/codeBlock2.png" alt="eGrocer" /><br><br>
 
 											</li>
 										</ul>
@@ -1500,7 +1485,7 @@
 												flutter build appbundle
 											</li>
 											<br>
-											<img src="images/generateAPK.png" alt="eShop" /><br><br>
+											<img src="images/generateAPK.png" alt="eGrocer" /><br><br>
 										</ul>
 									</li>
 
@@ -1523,24 +1508,24 @@
 										From Firebase Project] inside folder named Runner.</li>
 
 									<br>
-									<img src="images/ios1.png" alt="eShop" /><br><br>
+									<img src="images/ios1.png" alt="eGrocer" /><br><br>
 
 									<li>and then Select <b>Any iOS Device (armv7,arm64)</b> as shown in image below.
 									</li>
 									<br>
-									<img src="images/ios2.png" alt="eShop" /><br><br>
+									<img src="images/ios2.png" alt="eGrocer" /><br><br>
 
 									<li>After that Select <b>Archive</b> From Product Menu of Xcode as shown below.
 									</li>
 
 									<br>
-									<img src="images/ios3.png" alt="eShop" /><br><br>
+									<img src="images/ios3.png" alt="eGrocer" /><br><br>
 
 									<li>Once Build / Archive Generated, pop up window will be shown. Validate app First,
 										and After Successfull Validation of App, You Can Distribute App to AppStore.
 									</li>
 
-									<img src="images/ios4.png" alt="eShop" /><br><br>
+									<img src="images/ios4.png" alt="eGrocer" /><br><br>
 
 
 									<li>After SuccessFull Submission of Build File, it will be Reflected to your Apple

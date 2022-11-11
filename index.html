@@ -2,99 +2,149 @@
 <html lang="en">
 
 <head>
+    <title>eGrocer Grocery App
+    </title>
+    <link rel="shortcut icon" href="images/app_icon.webp" type="image/x-icon">
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title>eShop - ecommerce Multi Vendor Dashboard Setup | Documentation</title>
-    <!-- Styles -->
-    <link href="web/assets/css/theDocs.all.min.css" rel="stylesheet">
-    <link href="web/assets/css/custom.css" rel="stylesheet">
-    <link rel='icon' href='web/assets/img/favicon-64.png' type='image/gif' sizes="16x16">
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400' rel='stylesheet'
-        type='text/css'>
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="../apple-touch-icon.html">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .background {
+            background-color: #e1ffeb;
+            color: #25396F;
+        }
+
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #e1ffeb;
+            border: none;
+            color: #25396F;
+            text-align: center;
+            font-size: 28px;
+            height: 120px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+            font-size: 1.4rem;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .logo {
+            height: 100px;
+            object-fit: contain;
+            max-width: 100%;
+        }
+
+        .center {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 50px auto;
+
+        }
+
+        @media (max-width:480px) {
+            .header {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            h2 {
+                font-size: inherit;
+            }
+
+            .center {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+        }
+    </style>
 </head>
 
-<body data-spy="scroll" data-target=".sidebar" data-offset="200">
-    <header class="site-header navbar-transparent">
-        <!-- Top navbar & branding -->
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <!-- Toggle buttons and brand -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="true" aria-controls="navbar">
-                        <span class="glyphicon glyphicon-option-vertical"></span>
-                    </button>
-                    <button type="button" class="navbar-toggle for-sidebar" data-toggle="offcanvas">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="web/assets/img/titleicon.svg" alt="logo"
-                            align="center" style="max-height: 120px; max-width: 200px;"></a>
-                </div>
-                <!-- END Toggle buttons and brand -->
-                <!-- Top navbar -->
-                <!-- END Top navbar -->
-            </div>
-        </nav>
-        <!-- END Top navbar & branding -->
-        <!-- Banner -->
-        <div class="banner auto-size" style="background-color: #e1ffeb">
-            <div class="container text-black">
-                <h1><strong>eGrocer</strong> Documentation
-                </h1>
-                <h5>Easy To Configure,Setup And Use Our System</h5>
-            </div>
+<body>
+    <div class="background" style="padding-top: 30px;">
+        <div class="container background">
+            <table class="table">
+                <thead>
+                    <tr class="header">
+                        <th><img src="images/app_icon.webp" class="logo" alt="eCart Multivendor App">
+                        </th>
+                        <th style="vertical-align: middle;">
+                            <h2 style="font-weight: bolder;">
+                                eGrocer Grocery App Documentation
+                            </h2>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
         </div>
-        <!-- END Banner -->
-    </header>
-    <main class="container">
-        <div class="row">
-            <!-- Sidebar -->
+    </div>
 
-            <!-- END Sidebar -->
-            <!-- Main content -->
-            <br>
-            <div class="form-group col-md-4">
-                <a href="./web/index.html" class="btn btn-success btn-xl">Web (Frontend and Backend)</a>
-            </div>
-            <div class="form-group col-md-4">
-                <a href="./flutter-app/index.html" class="btn btn-success btn-xl">Flutter Application</a>
-            </div>
-            <!-- END Main content -->
-        </div>
-    </main>
+    <div class="center">
+        <button class="button" style="vertical-align:middle"
+            onclick="location.href = 'flutter-app/index.html';"><span>Customer App</span></button>
+
+        <button class="button" style="vertical-align:middle"
+            onclick="location.href = 'admin-panel/index.html';"><span>Admin Panel</span></button>
+    </div>
+
+
     <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <a id="scroll-up" href="#"><i class="fa fa-angle-up"></i></a>
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <p>Copyright &copy;
-                        <script>document.write(new Date().getFullYear())</script>
-                        . All right reserved
-                    </p>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <ul class="footer-menu">
-                        <!-- <li><a href="https://codecanyon.net/item/city-ecommerce-app/22015911"
-                                target="_blank">Changelog</a></li> -->
-                        <li><a href="https://wrteam.in" target='_blank'>Contact us</a></li>
-                    </ul>
-                </div>
-            </div>
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+        <div class="w3-xlarge w3-padding-32">
+            <a href="https://www.facebook.com/wrteam.in"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/wrteam.in"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://dribbble.com/Asgar_WRTeam"><i class="fa fa-dribbble w3-hover-opacity"></i></a>
+            <a href="https://www.youtube.com/channel/UCLt9XRUuiWsqKng4681_6cQ"><i
+                    class="fa fa-youtube-play w3-hover-opacity" aria-hidden="true"></i></a>
         </div>
+
+        <p>&copy;
+            <script>
+                var CurrentYear = new Date().getFullYear()
+                document.write(CurrentYear)
+            </script> <a href="https://wrteam.in/">WRTeam</a>
+        </p>
     </footer>
-    <!-- END Footer -->
-    <!-- Scripts -->
-    <script src="web/assets/js/theDocs.all.min.js"></script>
-    <script src="web/assets/js/custom.js"></script>
+
 </body>
 
 </html>
