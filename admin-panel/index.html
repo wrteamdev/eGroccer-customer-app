@@ -116,7 +116,7 @@
 			<div class="col-sm-6 col-lg-4">
 				<ul class="list-unstyled">
 					<li><strong class="font-weight-700">Created:</strong> 15 Nov, 2022</li>
-<!--					<li><strong>Update:</strong> 12 May, 2022</li>-->
+					<li><strong>Last Updated:</strong> 26 Nov, 2022</li>
 				</ul>
 			</div>
 		</div>
@@ -180,7 +180,7 @@
                 <br>
                 <p class="box">
                     <code>Note for Localhost Setup: </code> <br>
-                    1. Internet is required because Api comes from https://multivendor.wrteam.in/api-firebase/<br>
+                    1. Internet is required because Api comes from https://egrocer.wrteam.in/api<br>
                     2. For <a href="https://www.apachefriends.org/download.html" target="_blank">Xampp(Linux / Unix / macOS / Windows): https://www.apachefriends.org/download.html</a><br>
                     3. For <a href="https://getcomposer.org/doc/00-intro.md" target="_blank">Composer(Linux / Unix / macOS/ Windows): https://getcomposer.org/doc/00-intro.md</a>
                 </p>
@@ -197,15 +197,18 @@
 
             <ol class="alpha">
                 <li>Install XAMPP and Composer.</li>
-                <li>Copy egrocer code in ( EX. C:/Xampp/htdocs/egrocer) your folder (make sure all files move)</li>
-                <li>Create Database name 'egrocer' and change <code>DB_DATABASE=egrocer</code> <code>DB_USERNAME and DB_PASSWORD</code> in <code>.env</code> File.</li>
+                <li>Copy egrocer code in (EX. C:/Xampp/htdocs/egrocer) your folder (make sure all files move).
+                    If you going to setup it on server give root path to public folder (public_html/egrocer/public).</li>
+                <li>Add Your Domain Name As <code>APP_URL=yourdomain</code> (Ex: wrteam.in or egrocer.wrteam.in) in <code>.env</code> File. (Note:Only for Live Server)</li>
+                <li>Create Database name 'egrocer' and change <code>DB_DATABASE=egrocer</code> <code>DB_USERNAME=database_user_name</code> <code>DB_PASSWORD=database_user_password</code> in <code>.env</code> File.</li>
                 <li>Now, in root directory, run this command <code>composer install</code></li>
                 <li>After Composer installed successfully, run this command <code>npm install</code></li>
-                <li>After npm installed successfully, run this command <code>php artisan migrate</code> to add all required tables in database.</li>
+                <li>After npm installed successfully, run this command <code>php artisan migrate</code> to add all required tables in database.
+                    (Note: Make Sure Database configure in .env)</li>
                 <li>After Migration run this command to add required database entries <code>php artisan db:seed</code></li>
                 <li>For API's Authentication run command <code>php artisan passport:install</code> </li>
-                <li>For Storage Link run command <code>php artisan storage:link</code> </li>
-                <li>Now, in root directory, run this command <code>php artisan serve</code></li>
+                <li>For Images run command <code>php artisan storage:link</code>, If it is show link is already generated Please delete folder <code>public/storage</code> and run command again.</li>
+                <li>Now, in root directory, run this command <code>php artisan serve</code> (Note: This is only for localhost not for server)</li>
             </ol>
 
         </section>
