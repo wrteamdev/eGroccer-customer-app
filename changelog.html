@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .collapsible {
+            background-color: #555;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #37a279;
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Chagnge Log</h2>
+
+
+    <button class="collapsible">Version 1.1.0 - 2 Dec 2022</button>
+    <div class="content">
+        <br>
+        <ui>
+            <li>Added seller App/delivery boy app
+            </li>
+            <li>Added meta data on share product option from app
+            </li>
+            <li>Added admin panel installer
+            </li>
+            <li>Separate seller and delivery boy panels
+            </li>
+            <li>Improvements and issues fixed</li>
+        </ui><br>
+    </div>
+    <br>
+    <button class="collapsible">Version 1.0.0 - 16 Nov 2022</button>
+    <div class="content">
+        <br>
+        <ui>
+            <li>Initial version</li>
+        </ui><br>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
