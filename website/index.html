@@ -1,0 +1,406 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+	<title>eGrocer Website</title>
+	<link rel="shortcut icon" href="images/ic_launcher.png" type="image/x-icon">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		pre code {
+			background-color: #eee;
+			border: 1px solid #999;
+			display: block;
+			padding: 20px;
+			color: #f90849;
+		}
+	</style>
+</head>
+
+<body>
+	<section id="header">
+		<header> <span class="image avatar"><img src="images/ic_launcher.webp" alt="eGrocer - Customer App" /></span>
+			<h4 id="logo"><a href="#">eGrocer Website</a></h4>
+		</header>
+		<nav id="nav">
+			<ul>
+				<li><a href="#setupReactJS">Setup React JS</a></li>
+				<li><a href="#changeAdminPanelUrl">Change admin panel url</a></li>
+				<li><a href="#changeWebsiteThemeColor">Change website theme color</a></li>
+				<li><a href="#firebaseApp">How to set up firebase config for website?</a></li>
+				<li><a href="#runWebsite">Open and Run eGrocer Website</a></li>
+				<li><a href="#support">Need Support?</a></li>
+				<li><a href="#rating">Your Feedback</a></li>
+				<li><a href='#contactus'>Contact Us</a></li>
+
+			</ul>
+		</nav>
+	</section>
+	<div id="wrapper">
+		<div id="main">
+			<section id="one">
+				<div class="container">
+
+					<div class="container">
+						<h3>eGrocer Website</h3>
+					</div>
+
+					<div class="borderTop">
+						<div class="span-6 colborder info prepend-1">
+							<p class="prepend-top"> <strong> <br>
+									Author: WRTeam <br>
+									Contact: <a href="https://codecanyon.net/user/wrteam" style='color:#f90849'
+										target="_blank">CodeCanyon Profile</a> </strong> </p>
+						</div>
+						<div class="span-12 last">
+							<p class="prepend-top append-0">Thank you for purchasing the code. If you have any
+								questions that are beyond the scope of this help file, please feel free to message
+								me via my user page contact form <a href="https://codecanyon.net/user/wrteam"
+									style='color:#3c55d1' target="_blank">here</a>. Thanks so much!</p>
+						</div>
+					</div>
+
+					<section id="setupReactJS">
+						<div class="container"> <br>
+							<h2>How to setup React JS on windows?</h2>
+							<ol>
+								<li> If your System already have npm package then you can skip this step.
+									<br>
+								</li>
+								<br>
+
+								<li> To check whether your System already have npm package installed or not?
+									Open command Prompt and type below commands
+									<br>
+								</li>
+								<img src="images/react-npm-cmd.webp" alt="React UI Component" />
+								<br><br>
+
+								<li> If it is already installed then commands will respond you with versions
+									<br>
+								</li>
+								<img src="images/react-npm-check.webp" alt="React UI Component" />
+								<br><br>
+
+								<li>Download npm by clicking below link. <br> (<a style="color: #3C55D1;"
+										href="https://nodejs.org/en">npm</a>)</li>
+								<br>
+								<li>Download an option "Recommended For Most User" for Windows(x64) </li>
+
+								<img src="images/react-npm-node.webp" alt="React UI Component" />
+								<br><br>
+
+								<li>When you click on the Installation link, it the download installer file. Once the
+									installer finishes downloading, launch it. Click on next then reviewed and accept
+									End-user Licence Agreement; click on next. Then Select your destination path where
+									you want to install; click next.
+									Then in custom setup panel select "npm package manager" option and click next. Below
+									step-by step images are provided.
+								</li>
+								<br>
+
+								Step1:
+								<br><br>
+								<img src="images/react-npm-step1.webp" alt="React UI Component" />
+								<br><br>
+
+								Step2:
+								<br><br>
+								<img src="images/react-npm-step2.webp" alt="React UI Component" />
+								<br><br>
+
+								Step3:
+								<br><br>
+								<img src="images/react-npm-step3.webp" alt="React UI Component" />
+								<br><br>
+
+								Step4:
+								<br><br>
+								<img src="images/react-npm-step4.webp" alt="React UI Component" />
+								<br><br>
+
+								Step5:
+								<br><br>
+								<img src="images/react-npm-step5.webp" alt="React UI Component" />
+								<br><br>
+
+								Step6:
+								<br><br>
+								<img src="images/react-npm-step6.webp" alt="React UI Component" />
+								<br><br>
+
+								<li>
+									Verify npm installation folloeing the way mentioned in point 2 and 3
+								</li>
+								<br>
+							</ol>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
+
+					<section id="changeAdminPanelUrl">
+						<div class="container"> <br>
+							<h2>How to change admin panel url?</h2>
+							<ol>
+								<li>Open <strong style="color: red;">.env</strong> change only <strong
+										style="color: red;">REACT_APP_API_URL</strong> value
+									and make sure last
+									slack should not be
+									add. (Prefer screenshot)</li>
+								<br>
+								<img src="images/change-admin-panel-url.webp" alt="React UI Component" />
+							</ol>
+						</div>
+					</section>
+
+					<section id="changeWebsiteThemeColor">
+						<div class="container"> <br>
+							<h2>How to change admin panel url?</h2>
+							<ol>
+								<li>Open <strong style="color: red;">src > index.css</strong>, You can change colors
+									hashcode as per
+									your requirements.(Prefer screenshot)</li>
+								<br>
+								<img src="images/change-website-theme-color.webp" alt="React UI Component" />
+							</ol>
+						</div>
+					</section>
+
+					<section id="firebaseApp">
+						<div class="container"> <br>
+							<h2>How to set up firebase config for website?</h2>
+							<ol>
+								<li>
+									<strong>Firstly create your firebase app. For that follow : <a style="color: blue;"
+											href="https://wrteamdev.github.io/eGroccer-customer-app/flutter-app/index.html#create_fcm">
+											click here!</a></strong>
+									<br>
+								</li>
+								<br>
+								<li>
+									To set up config file of firebase eGrocer app for website open
+									<a style="color: blue;" href="https://console.firebase.google.com/">firebase
+										console.</a>
+									<br>
+								</li>
+								<br>
+
+								<li>
+									Open firebase eGrocer Project and follow below images
+									<br>
+								</li>
+								<img src="images/react-firebase-step1.webp" alt="React UI Component">
+								<br>
+								<img src="images/react-firebase-step2.webp" alt="React UI Component">
+								<br>
+								<img src="images/react-firebase-step3.webp" alt="React UI Component">
+								<br>
+								<img src="images/react-firebase-step4.webp" alt="React UI Component">
+								<br><br>
+
+								<li>
+									Provide your app a nickname.
+									<br>
+								</li>
+								<img src="images/react-firebase-step5.webp" alt="React UI Component">
+								<br><br>
+
+								<li>
+									Copy firebaseConfig oobject and click on continue to console.
+									<br>
+								</li>
+								<img src="images/react-firebase-step6.webp" alt="React UI Component">
+								<br><br>
+
+								<li>
+									Add your domain into firebase.
+									<br>
+								</li>
+								<img src="images/add-domain-for-firebase-otp.webp" alt="React UI Component">
+								<br><br>
+
+								<li>
+									Run "npm install firebase" command in your terminal and paste copied firebaseConfig
+									object at following fie of your project.
+									<br>
+								</li>
+
+								<img src="images/react-firebase-step7.webp" alt="React UI Component">
+								<br>
+								<img src="images/react-firebase-step8.webp" alt="React UI Component">
+								<br><br>
+							</ol>
+							<div class="section_bdr"></div>
+						</div>
+					</section>
+
+					<section id="runWebsite">
+						<div class="container"> <br>
+							<h2>How to open and run eGrocer Website?</h2>
+							<ol>
+								<li>
+									Open your react project in VS Code or any code editior you have.
+								</li>
+								<br>
+
+								<li>
+									Open terminal and change your current directory path to the folder which contains
+									package.json file of your react project.
+								</li>
+								<img src="images/react-terminal.webp" alt="React UI Component"><img />
+								<br><br>
+
+								<li>
+									Now insall all the dependencies. For that run a command "npm install" in your
+									terminal.
+								</li>
+								<img src="images/react-terminal-npm-install.webp" alt="React UI Component"><img />
+								<br><br>
+
+								<li>
+									Make a build folder of your project. For that run a command "npn run build"
+								</li>
+								<img src="images/react-terminal-npm-run-build.webp" alt="React UI Component"><img />
+								<br><br>
+
+								<li>
+									It will create build folder. Now run a command "serve -s build" to your terminal to
+									run your project. It will serve your project and provides you local and network
+									address. Copy one of those link and open in any browser.
+									Then you can see your project running successfully
+								</li>
+								<img src="images/react-terminal-serve-s-build.webp" alt="React UI Component"><img />
+								<br><br>
+							</ol>
+							<div class="section_bdr"></div>
+						</div>
+
+					</section>
+
+				</div>
+			</section>
+
+			<section id="support">
+				<div class="container"> <br>
+					<h2>Need support?</h2>
+					<p>Its our pleasure to serve our service and support. please contact our support team.
+					</p>
+					<p>Head of Customer Support : Vimal Gondariya<br> Skype: <a
+							href="https://join.skype.com/invite/BZ8brCpb7far" target="_blank" style='color:#3c55d1'>
+							Vimal Gondariya</a><br>
+
+
+					</p>
+
+					<p>To help our customers, we constantly be in touch with every customer if they need any
+						assistance
+						regarding our product.
+						We offer our customers a support from <strong> Mon – Fri 9.00am to 6.00pm IST (GMT
+							+5.30) – We are a
+							Team located in India – Asia.</strong></p>
+
+					<p>Typically we reply our customers for all the questions and queries within 24 hours of
+						time via
+						comments, support forum or emails.</p>
+
+
+					</ul>
+				</div>
+			</section>
+
+			<section id="rating">
+				<div class="container"> <br>
+					<h2>Your feedback </h2>
+					<p>Dear valuable customer,
+						Thank you very much for choosing our product.
+						It's our pleasure to serve top-notch service to you.
+						Please give us your honest feedback that will help us to make a more strong and
+						reliable product by
+						click here <a href="https://codecanyon.net/downloads" style='color:#3c55d1' target="_blank">Rate
+							Us</a>.
+						Thank you very much.</p>
+
+
+					</ul>
+				</div>
+			</section>
+
+			<section id="contactus">
+				<div class="container"> <br>
+					<h2>Contact us</h2>
+					<p>WRTeam has creative and dedicated group of developers who are mastered in Apps
+						Developments and Web
+						Application Development with a niche in delivering quality solutions to customers
+						across the globe.
+						Contact us today to find out how we can help you or for freelance work.
+					<p>Visit Us : <a href="https://wrteam.in/" target="_blank"><span
+								style="color:#0e8bcb;">https://wrteam.in</span>
+						</a>
+
+					<p></p>Skype: <a href="https://join.skype.com/invite/BZ8brCpb7far" target="_blank"
+						style='color:#3c55d1'> Vimal
+						Gondariya</a></p>
+
+
+					</p>
+					<p>Mail Us : support@wrteam.in</p>
+
+					</p>
+					<p>Thank you very much.</p>
+					<div class="section_bdr"></div>
+					</ul>
+				</div>
+			</section>
+
+			<section id="rating">
+				<div class="container"> <br>
+					<h2>Rating</h2>
+					<p>If you like our app, we will highly appreciate if you can provide us a rating of 5.
+						You can rate us from your CodeCanyon Menu > Download page.</p>
+					<div class="section_bdr"></div>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<section id="footer">
+			<div class="container">
+				<ul class="copyright">
+					<li>
+						<h3><span style="color:#0e8bcb;font-style:italic">WRTeam</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollzer.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			});
+			$('.scrollup').click(function () {
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+		});
+	</script>
+	<div><a href="#" class="scrollup">Scroll</a></div>
+	</div>
+</body>
+
+</html>
