@@ -112,6 +112,7 @@ section {
 }
 
 body {
+	font-family: 'Borel', cursive;
 	line-height: 1;
 }
 
@@ -139,9 +140,11 @@ table {
 }
 
 body {
+	font-family: 'Borel', cursive;
 	-webkit-text-size-adjust: none;
 }
 
+.scrollup
 /* Box Model */
 
 *,
@@ -1699,6 +1702,7 @@ body {
 /* Basic */
 
 body {
+	font-family: 'Borel', cursive;
 	background: #fff;
 }
 
@@ -2744,7 +2748,6 @@ input[type="button"]:disabled,
 	margin: 0 auto 0.5em auto;
 	width: 100px;
 	padding: 10px;
-	background: #fff;
 	border: 0px solid;
 }
 
@@ -2908,13 +2911,13 @@ input[type="button"]:disabled,
 	background: url("../../images/top-move.webp") no-repeat scroll 0 0;
 	bottom: 35px;
 	display: block;
-	height: 40px;
+	height: 60px;
 	opacity: 0.9;
 	outline: medium none !important;
 	position: fixed;
 	right: 10px;
 	text-indent: -9999px;
-	width: 40px;
+	width: 60px;
 }
 
 /* XLarge */
@@ -2992,6 +2995,7 @@ input[type="button"]:disabled,
 
 	html,
 	body {
+		font-family: 'Borel', cursive;
 		overflow-x: hidden;
 	}
 
@@ -3319,6 +3323,7 @@ input[type="button"]:disabled,
 
 	html,
 	body {
+		font-family: 'Borel', cursive;
 		min-width: 320px;
 	}
 
@@ -3376,4 +3381,9 @@ input[type="button"]:disabled,
 	.button {
 		padding: 0;
 	}
+
+}
+
+html {
+	scroll-behavior: smooth;
 }
