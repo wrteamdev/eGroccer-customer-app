@@ -2202,8 +2202,10 @@ input[type="radio"]+label:before {
 
 /* Image */
 
-#youtube {
-	height: 30px;
+img.youtube {
+	height: 35px !important;
+	width: fit-content !important;
+	margin: 10px !important;
 }
 
 .image {
