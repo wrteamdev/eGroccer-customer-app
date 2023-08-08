@@ -153,7 +153,6 @@ body {
 }
 
 /* Containers */
-
 .container {
 	margin-left: auto;
 	margin-right: auto;
@@ -2202,6 +2201,10 @@ input[type="radio"]+label:before {
 }
 
 /* Image */
+
+#youtube {
+	height: 30px;
+}
 
 .image {
 	border-radius: 5px;
