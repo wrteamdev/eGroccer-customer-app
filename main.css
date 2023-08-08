@@ -112,7 +112,7 @@ section {
 }
 
 body {
-	font-family: 'Borel', cursive;
+
 	line-height: 1;
 }
 
@@ -140,7 +140,7 @@ table {
 }
 
 body {
-	font-family: 'Borel', cursive;
+
 	-webkit-text-size-adjust: none;
 }
 
@@ -1702,7 +1702,7 @@ body {
 /* Basic */
 
 body {
-	font-family: 'Borel', cursive;
+
 	background: #fff;
 }
 
@@ -2995,7 +2995,7 @@ input[type="button"]:disabled,
 
 	html,
 	body {
-		font-family: 'Borel', cursive;
+
 		overflow-x: hidden;
 	}
 
@@ -3323,7 +3323,7 @@ input[type="button"]:disabled,
 
 	html,
 	body {
-		font-family: 'Borel', cursive;
+
 		min-width: 320px;
 	}
 
