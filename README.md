@@ -1,1 +1,1 @@
-# eGrocer Full Doc
+# eGrocer - Online Multi Vendor Grocery Store, eCommerce Marketplace Flutter Full App with Admin Panel
