@@ -1,161 +1,284 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background: #3ea0eb;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-.honeycomb {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-  transform: translateY(34.375px);
-}
-
-.honeycomb-cell {
-  flex: 0 1 250px;
-  max-width: 250px;
-  height: 137.5px;
-  margin: 65.4761904762px 12.5px 25px;
-  position: relative;
-  padding: 0.5em;
+.serviceBox {
   text-align: center;
+  margin-top: 60px;
+  position: relative;
   z-index: 1;
+  margin-bottom: 21px;
 }
 
-.honeycomb-cell__title {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  word-break: break-word;
-  text-transform: uppercase;
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.75em;
-  transition: opacity 350ms;
-}
-
-.honeycomb-cell__title>small {
-  font-weight: 300;
-  margin-top: 0.25em;
-}
-
-.honeycomb-cell__image {
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-}
-
-.honeycomb-cell::before,
-.honeycomb-cell::after {
-  content: "";
-}
-
-.honeycomb-cell::before,
-.honeycomb-cell::after,
-.honeycomb-cell__image {
-  top: -50%;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  display: block;
-  position: absolute;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  z-index: -1;
-}
-
-.honeycomb-cell::before {
+.serviceBox .service-icon {
+  width: 78px;
+  height: 78px;
+  border-radius: 3px;
   background: #fff;
-  transform: scale(1.055);
+  margin: 0 auto;
+  position: absolute;
+  top: -34px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: all 0.3s ease-out 0s;
 }
 
-.honeycomb-cell::after {
-  background: #3ea0eb;
-  opacity: 0.5;
-  transition: opacity 350ms;
+.serviceBox:hover .service-icon {
+  transform: rotate(45deg);
 }
 
-.honeycomb-cell:hover .honeycomb-cell__title {
-  opacity: 0;
+.serviceBox .service-icon span {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 3px;
+  background: #727cb6;
+  font-size: 30px;
+  color: #fff;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: all 0.3s ease-out 0s;
 }
 
-.honeycomb-cell:hover::before {
-  background: #72f88e;
+.serviceBox .service-icon span i {
+  transition: all 0.3s ease-out 0s;
 }
 
-.honeycomb-cell:hover::after {
-  opacity: 0;
+.serviceBox:hover .service-icon span i {
+  transform: rotate(-45deg);
 }
 
-.honeycomb__placeholder {
-  display: none;
-  opacity: 0;
-  width: 250px;
-  margin: 0 12.5px;
+.serviceBox .service-content {
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  padding: 55px 15px;
+  position: relative;
 }
 
-@media (max-width: 550px) {
-  .honeycomb-cell {
-    margin: 81.25px 25px;
-  }
+.serviceBox .service-content:before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  margin: 0 auto;
+  position: absolute;
+  top: -37px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
 }
 
-@media (min-width: 550px) and (max-width: 825px) {
-  .honeycomb-cell:nth-child(3n) {
-    margin-right: calc(50% - 125px);
-    margin-left: calc(50% - 125px);
-  }
-
-  .honeycomb__placeholder:nth-child(3n+5) {
-    display: block;
-  }
+.serviceBox:hover .service-content:before {
+  transform: rotate(45deg);
 }
 
-@media (min-width: 825px) and (max-width: 1100px) {
-  .honeycomb-cell:nth-child(5n+4) {
-    margin-left: calc(50% - 275px);
-  }
-
-  .honeycomb-cell:nth-child(5n+5) {
-    margin-right: calc(50% - 275px);
-  }
-
-  .honeycomb__placeholder:nth-child(5n),
-  .honeycomb__placeholder:nth-child(5n+3) {
-    display: block;
-  }
+.serviceBox .title {
+  font-size: 17px;
+  font-weight: 500;
+  color: #324545;
+  text-transform: uppercase;
+  margin: 0 0 25px 0;
+  position: relative;
+  transition: all 0.3s ease-out 0s;
 }
 
-@media (min-width: 1100px) {
-  .honeycomb-cell:nth-child(7n+5) {
-    margin-left: calc(50% - 400px);
-  }
+.serviceBox:hover .title {
+  color: #727cb6;
+}
 
-  .honeycomb-cell:nth-child(7n+7),
-  .honeycomb-cell:nth-child(7n+5):nth-last-child(2) {
-    margin-right: calc(50% - 400px);
-  }
+.serviceBox .description {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 0;
+}
 
-  .honeycomb__placeholder:nth-child(7n+7),
-  .honeycomb__placeholder:nth-child(7n+9),
-  .honeycomb__placeholder:nth-child(7n+11) {
-    display: block;
-  }
+.serviceBox .read-more {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  font-size: 14px;
+  color: #c4c2c2;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-out 0s;
+}
+
+.serviceBox .read-more:hover {
+  border: 1px solid #727cb6;
+  color: #727cb6;
+  text-decoration: none;
+}
+
+/* Color Combination 1 */
+.serviceBox.color1 .service-icon span {
+  background: #007bff;
+  /* Blue */
+}
+
+.serviceBox.color1:hover .title {
+  color: #007bff;
+}
+
+/* Color Combination 2 */
+.serviceBox.color2 .service-icon span {
+  background: #e74c3c;
+  /* Red */
+}
+
+.serviceBox.color2:hover .title {
+  color: #e74c3c;
+}
+
+/* Color Combination 3 */
+.serviceBox.color3 .service-icon span {
+  background: #27ae60;
+  /* Green */
+}
+
+.serviceBox.color3:hover .title {
+  color: #27ae60;
+}
+
+/* Color Combination 4 */
+.serviceBox.color4 .service-icon span {
+  background: #f39c12;
+  /* Yellow */
+}
+
+.serviceBox.color4:hover .title {
+  color: #f39c12;
+}
+
+/* Color Combination 5 */
+.serviceBox.color5 .service-icon span {
+  background: #8e44ad;
+  /* Purple */
+}
+
+.serviceBox.color5:hover .title {
+  color: #8e44ad;
+}
+
+/* Color Combination 6 */
+.serviceBox.color6 .service-icon span {
+  background: #3498db;
+  /* Light Blue */
+}
+
+.serviceBox.color6:hover .title {
+  color: #3498db;
+}
+
+/* Color Combination 7 */
+.serviceBox.color7 .service-icon span {
+  background: #2ecc71;
+  /* Emerald */
+}
+
+.serviceBox.color7:hover .title {
+  color: #2ecc71;
+}
+
+/* Color Combination 8 */
+.serviceBox.color8 .service-icon span {
+  background: #f1c40f;
+  /* Yellow */
+}
+
+.serviceBox.color8:hover .title {
+  color: #f1c40f;
+}
+
+/* Color Combination 9 */
+.serviceBox.color9 .service-icon span {
+  background: #d35400;
+  /* Pumpkin */
+}
+
+.serviceBox.color9:hover .title {
+  color: #d35400;
+}
+
+/* Color Combination 10 */
+.serviceBox.color10 .service-icon span {
+  background: #e67e22;
+  /* Carrot */
+}
+
+.serviceBox.color10:hover .title {
+  color: #e67e22;
+}
+
+/* Color Combination 11 */
+.serviceBox.color11 .service-icon span {
+  background: #f39c12;
+  /* Sunflower */
+}
+
+.serviceBox.color11:hover .title {
+  color: #f39c12;
+}
+
+/* Color Combination 12 */
+.serviceBox.color12 .service-icon span {
+  background: #16a085;
+  /* Turquoise */
+}
+
+.serviceBox.color12:hover .title {
+  color: #16a085;
+}
+
+/* Color Combination 13 */
+.serviceBox.color13 .service-icon span {
+  background: #34495e;
+  /* Dark Blue */
+}
+
+.serviceBox.color13:hover .title {
+  color: #34495e;
+}
+
+/* Color Combination 14 */
+.serviceBox.color14 .service-icon span {
+  background: #95a5a6;
+  /* Gray */
+}
+
+.serviceBox.color14:hover .title {
+  color: #95a5a6;
+}
+
+/* Color Combination 15 */
+.serviceBox.color15 .service-icon span {
+  background: #e74c3c;
+  /* Red */
+}
+
+.serviceBox.color15:hover .title {
+  color: #e74c3c;
+}
+
+/* Color Combination 16 */
+.serviceBox.color16 .service-icon span {
+  background: #9b59b6;
+  /* Amethyst */
+}
+
+.serviceBox.color16:hover .title {
+  color: #9b59b6;
 }
