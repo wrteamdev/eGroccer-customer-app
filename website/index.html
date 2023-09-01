@@ -27,18 +27,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="../main.css" />
-
-
-
-	<style>
-		pre code {
-			background-color: #eee;
-			border: 1px solid #999;
-			display: block;
-			padding: 20px;
-			color: #f90849;
-		}
-	</style>
 </head>
 
 <body>
@@ -49,11 +37,12 @@
 		</header>
 		<nav id="nav">
 			<ul>
-				<li><a href="#setupReactJS">Setup React JS</a></li>
-				<li><a href="#changeAdminPanelUrl">Change admin panel url</a></li>
+				<li><a href="#setup_react_js">Setup React JS</a></li>
+				<li><a href="#change_admin_panel_url">Change admin panel url</a></li>
 				<li><a href="#changeWebsiteThemeColor">Change website theme color</a></li>
-				<li><a href="#firebaseApp">How to set up firebase config for website?</a></li>
-				<li><a href="#runWebsite">Open and Run eGrocer Website</a></li>
+				<li><a href="#firebase_app">How to set up firebase config for website?</a></li>
+				<li><a href="#run_website">Open and Run eGrocer Website</a></li>
+				<li><a href="#deploy_website">Deploy Website on Server</a></li>
 				<li><a href="#support">Need Support?</a></li>
 				<li><a href="#rating">Your Feedback</a></li>
 				<li><a href='#contactus'>Contact Us</a></li>
@@ -85,7 +74,7 @@
 						</div>
 					</div>
 
-					<section id="setupReactJS">
+					<section id="setup_react_js">
 						<div class="container"> <br>
 							<h2>How to setup React JS on windows?</h2>
 							<ol>
@@ -98,61 +87,62 @@
 									Open command Prompt and type below commands
 									<br>
 								</li>
-								<img src="images/react-npm-cmd.webp" alt="React UI Component" />
-								<br><br>
+								<img src="images/react-npm-cmd.webp" alt="eGrocer" />
+								<br>
 
 								<li> If it is already installed then commands will respond you with versions
 									<br>
 								</li>
-								<img src="images/react-npm-check.webp" alt="React UI Component" />
-								<br><br>
+								<img src="images/react-npm-check.webp" alt="eGrocer" />
+								<br>
 
 								<li>Download npm by clicking below link. <br> (<a style="color: #3C55D1;"
 										href="https://nodejs.org/en">npm</a>)</li>
 								<br>
 								<li>Download an option "Recommended For Most User" for Windows(x64) </li>
 
-								<img src="images/react-npm-node.webp" alt="React UI Component" />
-								<br><br>
+								<img src="images/react-npm-node.webp" alt="eGrocer" />
+								<br>
 
 								<li>When you click on the Installation link, it the download installer file. Once the
 									installer finishes downloading, launch it. Click on next then reviewed and accept
 									End-user Licence Agreement; click on next. Then Select your destination path where
 									you want to install; click next.
-									Then in custom setup panel select "npm package manager" option and click next. Below
+									Then in custom setup panel select <code>npm package manager</code> option and click
+									next. Below
 									step-by step images are provided.
 								</li>
 								<br>
 
 								Step1:
-								<br><br>
-								<img src="images/react-npm-step1.webp" alt="React UI Component" />
-								<br><br>
+								<br>
+								<img src="images/react-npm-step1.webp" alt="eGrocer" />
+								<br>
 
 								Step2:
-								<br><br>
-								<img src="images/react-npm-step2.webp" alt="React UI Component" />
-								<br><br>
+								<br>
+								<img src="images/react-npm-step2.webp" alt="eGrocer" />
+								<br>
 
 								Step3:
-								<br><br>
-								<img src="images/react-npm-step3.webp" alt="React UI Component" />
-								<br><br>
+								<br>
+								<img src="images/react-npm-step3.webp" alt="eGrocer" />
+								<br>
 
 								Step4:
-								<br><br>
-								<img src="images/react-npm-step4.webp" alt="React UI Component" />
-								<br><br>
+								<br>
+								<img src="images/react-npm-step4.webp" alt="eGrocer" />
+								<br>
 
 								Step5:
-								<br><br>
-								<img src="images/react-npm-step5.webp" alt="React UI Component" />
-								<br><br>
+								<br>
+								<img src="images/react-npm-step5.webp" alt="eGrocer" />
+								<br>
 
 								Step6:
-								<br><br>
-								<img src="images/react-npm-step6.webp" alt="React UI Component" />
-								<br><br>
+								<br>
+								<img src="images/react-npm-step6.webp" alt="eGrocer" />
+								<br>
 
 								<li>
 									Verify npm installation folloeing the way mentioned in point 2 and 3
@@ -164,42 +154,43 @@
 						</div>
 					</section>
 
-					<section id="changeAdminPanelUrl">
+					<section id="change_admin_panel_url">
 						<div class="container"> <br>
 							<h2>How to change admin panel url?</h2>
 							<ol>
 								<li>Open <strong style="color: red;">.env</strong> change only <strong
-										style="color: red;">REACT_APP_API_URL</strong> value
+										style="color: red;">YOUR ADMIN PANEL URL (REMOVE SLASH FROM LAST)</strong> value
 									and make sure last
 									slack should not be
 									add. (Prefer screenshot)</li>
 								<br>
-								<img src="images/change-admin-panel-url.webp" alt="React UI Component" />
+								<img src="images/change-admin-panel-url.webp" alt="eGrocer" />
 							</ol>
 						</div>
 					</section>
 
 					<section id="changeWebsiteThemeColor">
 						<div class="container"> <br>
-							<h2>How to change admin panel url?</h2>
+							<h2>How to change website theme color?</h2>
 							<ol>
-								<li>Open <strong style="color: red;">src > index.css</strong>, You can change colors
-									hashcode as per
-									your requirements.(Prefer screenshot)</li>
+								<li>Open admin panel > Go to Web Settings Menu > General Web Settings</li>
+								<li>You can change theme, website title, website logo form here.(There is more settings
+									as well please explore that whole admin paenl page)</li>
+								<li>For handle social media links in website, Open admin panel > Go to Web Settings Menu
+									> Social Media</li>
 								<br>
-								<img src="images/change-website-theme-color.webp" alt="React UI Component" />
+								<img src="images/change-website-theme-color.webp" alt="eGrocer" />
 							</ol>
 						</div>
 					</section>
 
-					<section id="firebaseApp">
+					<section id="firebase_app">
 						<div class="container"> <br>
 							<h2>How to set up firebase config for website?</h2>
 							<ol>
 								<li>
-									<strong>Firstly create your firebase app. For that follow : <a style="color: blue;"
-											href="https://wrteamdev.github.io/eGroccer-customer-app/flutter-app/index.html#create_fcm">
-											click here!</a></strong>
+									Firstly create your firebase app. For that follow below
+									steps
 									<br>
 								</li>
 								<br>
@@ -213,54 +204,55 @@
 
 								<li>
 									Open firebase eGrocer Project and follow below images
-									<br>
-								</li>
-								<img src="images/react-firebase-step1.webp" alt="React UI Component">
+
+								</li><br>
+								<img src="images/react-firebase-step1.webp" alt="eGrocer">
 								<br>
-								<img src="images/react-firebase-step2.webp" alt="React UI Component">
+								<img src="images/react-firebase-step2.webp" alt="eGrocer">
 								<br>
-								<img src="images/react-firebase-step3.webp" alt="React UI Component">
+								<img src="images/react-firebase-step3.webp" alt="eGrocer">
 								<br>
-								<img src="images/react-firebase-step4.webp" alt="React UI Component">
-								<br><br>
+								<img src="images/react-firebase-step4.webp" alt="eGrocer">
+								<br>
 
 								<li>
 									Provide your app a nickname.
 									<br>
 								</li>
-								<img src="images/react-firebase-step5.webp" alt="React UI Component">
-								<br><br>
+								<img src="images/react-firebase-step5.webp" alt="eGrocer">
+								<br>
 
 								<li>
 									Copy firebaseConfig oobject and click on continue to console.
 									<br>
 								</li>
-								<img src="images/react-firebase-step6.webp" alt="React UI Component">
-								<br><br>
+								<img src="images/react-firebase-step6.webp" alt="eGrocer">
+								<br>
 
 								<li>
 									Add your domain into firebase.
 									<br>
 								</li>
-								<img src="images/add-domain-for-firebase-otp.webp" alt="React UI Component">
-								<br><br>
-
-								<li>
-									Run "npm install firebase" command in your terminal and paste copied firebaseConfig
-									object at following fie of your project.
-									<br>
-								</li>
-
-								<img src="images/react-firebase-step7.webp" alt="React UI Component">
+								<img src="images/add-domain-for-firebase-otp.webp" alt="eGrocer">
 								<br>
-								<img src="images/react-firebase-step8.webp" alt="React UI Component">
-								<br><br>
+								<li>
+									Paste here copied value
+								</li>
+								<br>
+								<img src="images/react-firebase-step7.webp" alt="eGrocer">
+								<br>
+								<li>Add your website url here ot If you are run website in localhost keep it blank
+									here</li>
+
+								<img src="images/react-firebase-step8.webp" alt="eGrocer">
+
+								<br>
 							</ol>
 							<div class="section_bdr"></div>
 						</div>
 					</section>
 
-					<section id="runWebsite">
+					<section id="run_website">
 						<div class="container"> <br>
 							<h2>How to open and run eGrocer Website?</h2>
 							<ol>
@@ -273,36 +265,78 @@
 									Open terminal and change your current directory path to the folder which contains
 									package.json file of your react project.
 								</li>
-								<img src="images/react-terminal.webp" alt="React UI Component"><img />
-								<br><br>
-
+								<img src="images/react-terminal.webp" alt="eGrocer"><img />
+								<br>
 								<li>
-									Now insall all the dependencies. For that run a command "npm install" in your
-									terminal.
+									Now install all the dependencies. For that run a command <code>npm install</code> in
+									your terminal.
 								</li>
-								<img src="images/react-terminal-npm-install.webp" alt="React UI Component"><img />
-								<br><br>
-
+								<img src="images/react-terminal-npm-install.webp" alt="eGrocer"><img />
+								<br>
 								<li>
-									Make a build folder of your project. For that run a command "npm run build"
+									To run the website in your localhost, Run this command <code>npm start</code>
 								</li>
-								<img src="images/react-terminal-npm-run-build.webp" alt="React UI Component"><img />
-								<br><br>
-
+								<img src="images/react-terminal-npm-start.webp" alt="eGrocer"><img />
+								<br>
 								<li>
-									It will create build folder. Now run a command "serve -s build" to your terminal to
-									run your project. It will serve your project and provides you local and network
-									address. Copy one of those link and open in any browser.
-									Then you can see your project running successfully
+									Make a build folder of your project. For that run a command
+									<code>npm run build</code>
 								</li>
-								<img src="images/react-terminal-serve-s-build.webp" alt="React UI Component"><img />
-								<br><br>
+								<img src="images/react-terminal-npm-run-build.webp" alt="eGrocer"><img />
+								<br>
+
 							</ol>
 							<div class="section_bdr"></div>
 						</div>
 
 					</section>
 
+					<section id="deploy_website">
+						<div class="container"> <br>
+							<h2>How to deploy website on server?</h2>
+							<ol>
+								<li>There are two ways to deploy website on server</li>
+								<ol>
+									<li>
+										Deploy by build zip folder
+										<ul>
+											<li>
+												Create zip file of the build folder from the website code
+											</li>
+											<li>
+												Upload it on website root folder and extract thair content in the root
+												folder
+											</li>
+										</ul>
+									</li>
+									<li>
+										Deploy ftp
+										<ul>
+											<li>
+												To deploy website via FTP you have to create ftp of the website
+											</li>
+											<li>
+												Set ftp details in the <code>ftp.js</code> file
+												<br>
+												<img src="images/react-terminal-npm-run-deploy-ftp-setting.webp"
+													alt="eGrocer"><img />
+												<br>
+											</li>
+
+											<li>
+												After setup ftp properly, run this code to deploy website on server
+												<code>npm run deploy</code>
+												<br>
+												<img src="images/react-terminal-npm-run-deploy.webp"
+													alt="eGrocer"><img />
+												<br>
+											</li>
+										</ul>
+									</li>
+								</ol>
+							</ol>
+						</div>
+					</section>
 				</div>
 			</section>
 
@@ -311,10 +345,9 @@
 					<h2>Need support?</h2>
 					<p>Its our pleasure to serve our service and support. please contact our support team.
 					</p>
-					<p>Head of Customer Support : Vimal Gondariya<br> Skype: <a
-							href="https://join.skype.com/invite/BZ8brCpb7far" target="_blank" style='color:#3c55d1'>
-							Vimal Gondariya</a><br>
-
+					<p>Head of Customer Support : Moaez Qureshi<br> Skype: <a
+							href="https://join.skype.com/invite/wI9ZxFYSlC8y" target="_blank" style='color:#3c55d1'>
+							Moaez Qureshi</a><br>
 
 					</p>
 
@@ -363,9 +396,10 @@
 								style="color:#0e8bcb;">https://wrteam.in</span>
 						</a>
 
-					<p></p>Skype: <a href="https://join.skype.com/invite/BZ8brCpb7far" target="_blank"
-						style='color:#3c55d1'> Vimal
-						Gondariya</a></p>
+					<p>
+
+					</p>Skype: <a href="https://join.skype.com/invite/wI9ZxFYSlC8y" target="_blank"
+						style='color:#3c55d1'>Moaez Qureshi</a></p>
 
 
 					</p>
