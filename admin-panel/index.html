@@ -30,7 +30,8 @@
         <li><a href="#introduction">Introduction</a></li>
         <li><a href="#server-requirement">Server Requirement</a></li>
         <li><a href="#configure-php-ini-basic-settings">Configure PHP INI basic settings</a></li>
-        <li><a href="#installation-steps">Installation Steps</a></li>
+        <li><a href="#installation-steps-localhost">Installation Steps for Setup in Localhost</a></li>
+        <li><a href="#installation-steps-server">Installation Steps for Setup in Server</a></li>
         <li><a href="#support">Need Support?</a></li>
         <li><a href="#rating">Your Feedback</a></li>
         <li><a href='#contactus'>Contact Us</a></li>
@@ -149,9 +150,9 @@
 
           </section>
 
-          <section id="installation-steps">
+          <section id="installation-steps-localhost">
             <div class="container"> <br>
-              <h2>Laravel Installation - (Linux / Unix / macOS / Windows)</h2>
+              <h2>Installation Steps for Setup in Localhost</h2>
               <ol>
                 <li>Install XAMPP and Composer.</li>
                 <li>Copy egrocer code in (EX. C:/Xampp/htdocs/egrocer) your folder (make sure all files move).
@@ -176,6 +177,62 @@
                   Please delete folder <code>public/storage</code> and run command again.</li>
                 <li>Now, in root directory, run this command <code>php artisan serve</code> (Note: This is only for
                   localhost not for server)</li>
+              </ol>
+              <div class="section_bdr"></div>
+              </ul>
+            </div>
+          </section>
+
+          <section id="installation-steps-server">
+            <div class="container"> <br>
+              <h2>Installation Steps for Setup in Server</h2>
+              <ol>
+                <li>Upload admin panel code <code>eGrocer Admin Panel.zip</code>zip file on your server admin panel root
+                  folder</li>
+                <li>Extract that file's content in that admin panel's folder, Make sure all content should be in admin
+                  panel's folder
+                </li>
+                <li>Create Database in your server and change database user name, database name and database password in
+                  <code>.env</code> file, <code>DB_DATABASE=your_database_name</code>
+                  <code>DB_USERNAME=your_database_user_name</code> <code>DB_PASSWORD=your_database_password</code>.
+                </li>
+                <li>Open your admin panel url and add postfix /install (Like:
+                  https://admin_panel_url.com<strong style="color:blue">/install</strong>)
+                </li>
+                <br>
+                <img src="images/step_1.webp" alt="eGrocer" />
+                <br><br>
+                <li>These are the minimum requirements, These all should be green marked, If you get any red
+                  mark here, Enable that plugin from the server or Ask server support to enable that plugin and make
+                  sure all will green marked
+                </li>
+                <br>
+                <img src="images/step_2.webp" alt="eGrocer" />
+                <br><br>
+                <li>Keep Database host and Database port value same, Set Database name, Dabase
+                  username, Database password will be set here your created database details and email and password as
+                  per your requirement (This email and password will use for login the admin panel)
+                </li>
+                <br>
+                <img src="images/step_3.webp" alt="eGrocer" />
+                <br><br>
+                <li>Enter purchase code here provided by codecanyon (<strong style="color: blue;"><a
+                      href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-"
+                      target="_blank">How
+                      to
+                      get purchase code?</a></strong>)
+                </li>
+                <br>
+                <img src="images/step_4.webp" alt="eGrocer" />
+                <br><br>
+
+                <li>Wohoo! Your admin panel setup done, Congratulations!
+                </li>
+                <br>
+                <img src="images/step_5.webp" alt="eGrocer" />
+                <br><br>
+                <li><strong style="color: blue;">Now open your admin url, You will get working admin panel
+                    there.</strong>
               </ol>
               <div class="section_bdr"></div>
               </ul>
@@ -258,9 +315,10 @@
                     style="color:#0e8bcb;">https://wrteam.in</span>
                 </a>
 
-              <p></p>Skype: <a href="https://join.skype.com/invite/U6gDxDxBIblf" target="_blank" style='color:#3c55d1'>
-                Vijya Hirani</a></p>
-
+              <p>Head of Customer Support : Vijya Hirani<br>
+                Skype: <a href="https://join.skype.com/invite/U6gDxDxBIblf" target="_blank" style='color:#3c55d1'>
+                  Vijya Hirani</a><br>
+              </p>
               </p>
               <p>Mail Us : support@wrteam.in</p>
 
