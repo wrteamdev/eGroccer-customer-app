@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Change Log
+    </h1>
+    <ul class="change-list" id="change-list">
+    </ul>
+
+    <script>
+        const jsonData = [
+            {
+                "version": "Version 1.9.3 - 04 Sep 2023",
+                "changes": [
+                    {
+                        "type": "Added",
+                        "description": "Order detail page (Website)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "FSSAI detail inclusion in product detail page (Website, App, Panel)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Get direction of seller store and customer location (Seller/Delivery Boy App)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Call to seller and customer (Seller/Delivery Boy App)"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Slug routings (Website)"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Installation steps (Admin Panel)"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Auto update system (Admin Panel)"
+                    }, {
+                        "type": "Updated",
+                        "description": "Admin panel product detail page variant image preview issue"
+                    },
+                    {
+                        "type": "Re-Design",
+                        "description": "Order tracker (Customer App)"
+                    },
+                    {
+                        "type": "Fixed",
+                        "description": "Seller commission issue (Admin panel)"
+                    }
+                ]
+            },
+            {
+                "version": "Version 1.9.2 - 09 Aug 2023",
+                "changes": [
+                    {
+                        "type": "Added",
+                        "description": "Order filter option with active and previous order type (App & Website)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Added FCM Notification Functionality (Website)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Image placeholder (Website)"
+                    }, {
+                        "type": "Improved",
+                        "description": "Slug routings (Website)"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Installation steps(Admin Panel)"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Auto update system (Admin Panel)"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Manage products in Seller panel"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Cash collection in Delivery boy section"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Cart total & promocode issue when item cancel in order"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "User role (Admin, Seller, Delivery Boy) login"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Featured section in admin panel"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Optimised code and enhanced performance for faster operation (Website)"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Show full-page dialog for internet/API issues instead of toast messages (App)"
+                    },
+                    {
+                        "type": "Re-Design",
+                        "description": "Order tracker(Customer App)"
+                    },
+                    {
+                        "type": "Fixed",
+                        "description": "Cart, Checkout, Order detail, Invoice detail calculation issue solved"
+                    }
+                ]
+            },
+            {
+                "version": "Version 1.9.1 - 14 July 2023",
+                "changes": [
+                    {
+                        "type": "Fixed",
+                        "description": "Addressed various bugs and issues to improve stability and user experience"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Optimized code and enhanced performance for faster operation"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Made minor adjustments to the user interface for improved usability"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Implemented various enhancements to enhance overall functionality"
+                    }
+                ]
+            },
+            {
+                "version": "Version 1.9.0 - 20 June 2023",
+                "changes": [
+                    {
+                        "type": "Added",
+                        "description": "FTP deployment feature has been added to the website"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Resend OTP functionality has been incorporated into the website"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Multi-language functionality has been implemented on the website"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "A language management option has been added to both the app and website, allowing for easy language customisation from the panel side"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Various bug fixes have been applied, resulting in improved performance and stability"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Flutter v3.10.5 - Seamlessly utilize the latest Flutter features"
+                    }
+                ]
+            },
+            {
+                "version": "Version 1.8.0 - 01 June 2023",
+                "changes": [
+                    {
+                        "type": "Added",
+                        "description": "Paypal payment gateway (Website)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Theme color-related settings in admin panel (Website, Admin Panel)"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Signing and registration flow (App, Website)"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Promo code module (Website)"
+                    },
+                    {
+                        "type": "Fixed",
+                        "description": "Various Small Bugs and Improvements (App, Website, Panels)"
+                    }
+                ]
+            },
+            {
+                "version": "Version 1.7.0 - 29 Apr 2023",
+                "changes": [
+                    {
+                        "type": "Added",
+                        "description": "Promo code module"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Website settings in admin panel"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Delivery boy earning module"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Website UI/UX"
+                    },
+                    {
+                        "type": "Fixed",
+                        "description": "Various bugs and made general improvements to the app"
+                    }
+                ]
+            },
+            {
+                "version": "Version 1.6.0 - 21 Mar 2023",
+                "changes": [
+                    {
+                        "type": "Added",
+                        "description": "Release a website"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Added the ability for iOS app updates (in-app update)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Added PayPal payment method"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Added a search feature in the admin panel to search through the menu"
+                    },
+                    {
+                        "type": "Fixed",
+                        "description": "Various bugs and made general improvements to the app"
+                    }
+                ]
+            },
+            {
+                "version": "Verison 1.5.0 - 11 Mar 2023",
+                "changes": [
+                    {
+                        "type": "Added",
+                        "description": "Url option in FCM notification"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "App update option"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Popup offer image (Show popup offer image at app home screen)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "FCM push notification (Set URL redirection option)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Received FCM push notification without login (App)"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Major validation (App and panel)"
+                    },
+                    {
+                        "type": "Fixed",
+                        "description": "Various bugs and made general improvements"
+                    }
+                ]
+            },
+            {
+                "version": "Version 1.4.0 - 30 Jan 2023",
+                "changes": [
+                    {
+                        "type": "Added",
+                        "description": "Dark/Light Theme (panel)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Get the current location in the seller edit form(panel)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Paytm payment gateway(app & panel)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Section custom sorting(app & panel)"
+                    },
+                    {
+                        "type": "Updated",
+                        "description": "Invoice download option directly instead of showing print preview (app/panel)"
+                    },
+                    {
+                        "type": "Fixed",
+                        "description": "Improvements & bug fixes(app & panel)"
+                    }
+                ]
+            },
+            {
+                "version": "Version 1.2.0 - 28 Dec 2022",
+                "changes": [
+                    {
+                        "type": "Added",
+                        "description": "Seller & delivery boy registration system (app)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Order fcm notification (panel)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Order status notify system by smtp (panel)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Default city selection option in system settings (panel)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Default city set at initial if map location not selected (app)"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Seller & delivery boy registration system (panel)"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Order fcm notification (app)"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Auto admin panel installation system (panel)"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Other minor improvements (app and panel)"
+                    }
+                ]
+            },
+            {
+                "version": "Version 1.1.0 - 02 Dec 2022",
+                "changes": [
+                    {
+                        "type": "Added",
+                        "description": "seller App/delivery boy app"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "meta data on share product option from app"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "admin panel installer"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Separate seller and delivery boy panels"
+                    },
+                    {
+                        "type": "Fixed",
+                        "description": "Improvements and issues fixed"
+                    }
+                ]
+            },
+            {
+                "version": "Version 1.0.0 - 16 Nov 2022",
+                "changes": [
+                    {
+                        "type": "Added",
+                        "description": "Intial version"
+                    }
+                ]
+            }
+        ];
+
+        const changeList = document.getElementById("change-list");
+
+        let activeDescriptionList = null; // Track the currently active description list
+
+        jsonData.forEach(versionData => {
+            const versionItem = document.createElement("li");
+            versionItem.classList.add("change-item");
+
+            const versionHeader = document.createElement("div");
+            versionHeader.classList.add("version");
+            versionHeader.textContent = versionData.version;
+
+            const descriptionList = document.createElement("ul");
+            descriptionList.classList.add("description-list");
+
+            versionHeader.addEventListener("click", () => {
+                if (activeDescriptionList) {
+                    activeDescriptionList.classList.remove("active");
+                }
+
+                descriptionList.classList.toggle("active");
+                activeDescriptionList = descriptionList;
+            });
+
+            versionItem.appendChild(versionHeader);
+
+            versionData.changes.forEach(change => {
+                const changeDescription = document.createElement("li");
+                changeDescription.classList.add("description");
+
+                const badge = document.createElement("span");
+                badge.classList.add("badge");
+
+                switch (change.type) {
+                    case "Added":
+                        badge.classList.add("badge-added");
+                        break;
+                    case "Improved":
+                        badge.classList.add("badge-improved");
+                        break;
+                    case "Fixed":
+                        badge.classList.add("badge-fixed");
+                        break;
+                    case "Updated":
+                        badge.classList.add("badge-update");
+                        break;
+                    case "Re-Design":
+                        badge.classList.add("badge-redesign");
+                        break;
+                    default:
+                        break;
+                }
+
+                badge.textContent = change.type;
+
+                const descriptionText = document.createTextNode(change.description);
+
+                changeDescription.appendChild(badge);
+                changeDescription.appendChild(descriptionText);
+
+                descriptionList.appendChild(changeDescription);
+            });
+
+            versionItem.appendChild(descriptionList);
+
+            changeList.appendChild(versionItem);
+        });
+    </script>
+</body>
+
+</html>

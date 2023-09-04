@@ -1,0 +1,73 @@
+.change-list {
+  list-style: none;
+  padding: 0;
+}
+
+.change-item {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  /* Add bottom space of 10px to each list item */
+  border: 1px solid #353535;
+  border-radius: 7px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.badge-added {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.badge-improved {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.badge-fixed {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.badge-update {
+  background-color: #005eff;
+  /* Blue color for "Update" */
+  color: #fff;
+}
+
+.badge-redesign {
+  background-color: #2298ff;
+  /* Orange color for "Redesign" */
+  color: #fff;
+}
+
+.version {
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* Add spacing between version headers and list items */
+  cursor: pointer;
+  color: rgb(51, 51, 51);
+  background-color: #d8d8d8;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+/* Transition effect for expanding and collapsing */
+.description-list {
+  margin-bottom: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+/* Apply max-height to show/hide content */
+.description-list.active {
+  max-height: 1000px;
+  /* Adjust to a value that suits your content */
+}
