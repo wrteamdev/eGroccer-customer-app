@@ -178,6 +178,11 @@
                 <li>Add Your Domain Name As <code>APP_URL=yourdomain</code> (Ex: wrteam.in or egrocer.wrteam.in) in
                   <code>.env</code> File. (Note:Only for Live Server)
                 </li>
+                <div style="border-radius: 10px; padding: 10px; margin: 15px 0 15px 0; border: 3px solid red;">
+                  <strong style="color: red;">Note:</strong> Be advised that if you do not find the <code>.env</code>
+                  file in the root folder, it is necessary to activate the "Unhide hidden files and
+                  folders" option in your settings.
+                </div>
                 <li>Create Database name 'egrocer' and change <code>DB_DATABASE=egrocer</code>
                   <code>DB_USERNAME=database_user_name</code> <code>DB_PASSWORD=database_user_password</code> in
                   <code>.env</code> File.
@@ -186,7 +191,7 @@
                 <li>After Composer installed successfully, run this command <code>npm install</code></li>
                 <li>After npm installed successfully, run this command <code>php artisan migrate</code> to add all
                   required tables in database.
-                  (Note: Make Sure Database configure in .env)</li>
+                  (Note: Make Sure Database configure in <code>.env</code>)</li>
                 <li>After Migration run this command to add required database entries <code>php artisan db:seed</code>
                 </li>
                 <li>For API's Authentication run command <code>php artisan passport:install</code> </li>
@@ -208,12 +213,15 @@
                 <li>Upload admin panel code <code>eGrocer Admin Panel.zip</code>zip file on your server admin panel root
                   folder</li>
                 <li>Extract that file's content in that admin panel's folder, Make sure all content should be in admin
-                  panel's folder
+                  panel's root folder, Includes <strong style="color: blue;">.editorconfig</strong>, <strong
+                    style="color: blue;">.env</strong>, <strong style="color: blue;">.env.example</strong>, <strong
+                    style="color: blue;">.htaccess</strong>, <strong style="color: blue;">.styleci.yml</strong> files
                 </li>
-                <li>Create Database in your server and change database user name, database name and database password in
-                  <code>.env</code> file, <code>DB_DATABASE=your_database_name</code>
-                  <code>DB_USERNAME=your_database_user_name</code> <code>DB_PASSWORD=your_database_password</code>.
-                </li>
+                <div style="border-radius: 10px; padding: 10px; margin: 15px 0 15px 0; border: 3px solid red;">
+                  <strong style="color: red;">Note:</strong> Be advised that if you do not find the <code>.env</code>
+                  file in the root folder, it is necessary to activate the "Unhide hidden files and
+                  folders" option in your settings.
+                </div>
                 <li>Open your admin panel url and add postfix /install (Like:
                   https://admin_panel_url.com<strong style="color:blue">/install</strong>)
                 </li>
