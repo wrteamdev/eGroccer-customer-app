@@ -1,408 +1,393 @@
-<em>
-	<!DOCTYPE HTML>
-	<html>
+<!DOCTYPE HTML>
+<html lang="en-US">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description"
-			content="Discover eGrocer, your go-to resource for efficient online grocery store management. Explore our comprehensive guides on inventory management, order processing, customer engagement, and more. Start optimizing your eGrocer experience today.">
-		<meta name="keywords"
-			content="eGrocer, online grocery store, grocery management, eCommerce, marketplace, Flutter app, admin panel, inventory management, order processing, customer engagement, grocery documentation">
-		<meta name="author" content="eGrocer">
-		<meta name="robots" content="index, follow"> <!-- Instruct search engines to index and follow the page -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Discover eGrocer, your go-to resource for efficient online grocery store management. Explore our comprehensive guides on inventory management, order processing, customer engagement, and more. Start optimizing your eGrocer experience today.">
+	<meta name="keywords"
+		content="eGrocer, online grocery store, grocery management, eCommerce, marketplace, Flutter app, admin panel, inventory management, order processing, customer engagement, grocery documentation">
+	<meta name="author" content="eGrocer">
+	<meta name="robots" content="index, follow"> <!-- Instruct search engines to index and follow the page -->
 
-		<!-- Open Graph meta tags for social media sharing -->
-		<meta property="og:title"
-			content="eGrocer - Online Multi Vendor Grocery Store, eCommerce Marketplace Flutter Full App with Admin Panel">
-		<meta property="og:description"
-			content="Discover eGrocer, your go-to resource for efficient online grocery store management. Explore our comprehensive guides on inventory management, order processing, customer engagement, and more. Start optimizing your eGrocer experience today.">
-		<meta property="og:image" content="../images/app_icon.webp">
-		<meta property="og:url"
-			content="https://codecanyon.net/item/egrocer-online-grocery-store-ecommerce-marketplace-flutter-full-app-with-admin-panel/41423150/">
-		<meta property="og:type" content="website">
+	<!-- Open Graph meta tags for social media sharing -->
+	<meta property="og:title"
+		content="eGrocer - Online Multi Vendor Grocery Store, eCommerce Marketplace Flutter Full App with Admin Panel">
+	<meta property="og:description"
+		content="Discover eGrocer, your go-to resource for efficient online grocery store management. Explore our comprehensive guides on inventory management, order processing, customer engagement, and more. Start optimizing your eGrocer experience today.">
+	<meta property="og:image" content="../images/app_icon.webp">
+	<meta property="og:url"
+		content="https://codecanyon.net/item/egrocer-online-grocery-store-ecommerce-marketplace-flutter-full-app-with-admin-panel/41423150/">
+	<meta property="og:type" content="website">
 
+	<title>eGrocer - Online Multi Vendor Grocery Store, eCommerce Marketplace Flutter Full App with Admin Panel</title>
+	<link rel="shortcut icon" href="../images/app_icon.webp" type="image/x-icon">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="../main.css" />
+</head>
 
-		<title>eGrocer - Online Multi Vendor Grocery Store, eCommerce Marketplace Flutter Full App with Admin Panel
-		</title>
-		<link rel="shortcut icon" href="../images/app_icon.webp" type="image/x-icon">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="../main.css" />
+<body>
+	<section id="sidebar" style="width: 20em;">
+		<header> <span class="image avatar"><img src="../images/app_icon.webp"
+					alt="eGrocer - Seller Delivery Boy App" /></span>
+			<h4 id="logo"><a href="#">eGrocer Seller Delivery Boy App</a></h4>
+		</header>
+		<nav id="nav">
+			<ul>
+				<li><a href="#setupJDK">How to Setup Java jdk-11 on windows</a></li>
+				<li><a href="#setup">How to setup Flutter</a></li>
 
-
-
-		<style>
-			pre code {
-				background-color: #eee;
-				border: 1px solid #999;
-				display: block;
-				padding: 20px;
-				color: #f90849;
-			}
-		</style>
-	</head>
-
-	<body>
-		<section id="header">
-			<header> <span class="image avatar"><img src="../images/app_icon.webp"
-						alt="eGrocer - Seller Delivery Boy App" /></span>
-				<h4 id="logo"><a href="#">eGrocer Seller Delivery Boy App</a></h4>
-			</header>
-			<nav id="nav">
-				<ul>
-					<li><a href="#setupJDK">How to Setup Java jdk-11 on windows</a></li>
-					<li><a href="#setup">How to setup Flutter</a></li>
-
-					<li><a href="#flutter2">Upgrade to flutter 2.x</a></li>
-					<li><a href="#open">How to first run project</a></li>
-					<li><a href="#appname">How to change App name</a></li>
-					<li><a href="#version">How to change App Version</a></li>
-					<li><a href="#applogo">How to change App logo</a></li>
-					<li><a href="#appcolor">How to change App color</a></li>
-					<!-- <li><a href="#animationcolor">How to change Animation color</a></li>
+				<li><a href="#flutter2">Upgrade to flutter 2.x</a></li>
+				<li><a href="#open">How to first run project</a></li>
+				<li><a href="#appname">How to change App name</a></li>
+				<li><a href="#version">How to change App Version</a></li>
+				<li><a href="#applogo">How to change App logo</a></li>
+				<li><a href="#appcolor">How to change App color</a></li>
+				<!-- <li><a href="#animationcolor">How to change Animation color</a></li>
 					<li><a href="#changeAnimation">How to change Animation</a></li> -->
-					<li><a href="#packagename">How to change Packagename</a></li>
-					<li><a href="#assetimage">How to Change Images in asset</a></li>
-					<li><a href="#addlanguage">Manage Languages</a></li>
-					<li><a href="#appfont">How to change app font</a></li>
-					<li><a href="#serverurl">How to Change Server URL</a></li>
+				<li><a href="#packagename">How to change Packagename</a></li>
+				<li><a href="#assetimage">How to Change Images in asset</a></li>
+				<li><a href="#addlanguage">Manage Languages</a></li>
+				<li><a href="#appfont">How to change app font</a></li>
+				<li><a href="#serverurl">How to Change Server URL</a></li>
 
 
-					<li><a href='#create_fcm'>How to create Flutter Firebase App</a></li>
+				<li><a href='#create_fcm'>How to create Flutter Firebase App</a></li>
 
 
-					<!-- <li><a href='#firebase_otp'>How to Enable Firebase Phone
+				<!-- <li><a href='#firebase_otp'>How to Enable Firebase Phone
 							Authentication(OTP).</a></li>
 					<li><a href='#otp'>How to Change default country code for OTP.</a></li> -->
 
-					<li><a href='#fcm'>How to set Notification</a></li>
-					<!-- <li><a href='#link'>How to Create Dynamic Link Using Firebase for Share
+				<li><a href='#fcm'>How to set Notification</a></li>
+				<!-- <li><a href='#link'>How to Create Dynamic Link Using Firebase for Share
 							product</a></li>
 					<li><a href="#map1">How to Add Map API key for Address</a></li>
 					<li><a href='#map'>Enable Map SDK From Cloud Plateform.</a></li>
 					<li><a href='#cloud'>Enable CloudKit for multiple file select in ios.</a></li> -->
 
-					<li><a href='#limit'>How Increase Product Load Limit</a></li>
-					<li><a href='#api'>How Change Api parameter</a></li>
-					<li><a href='#privacy'>Get Privacy-Policy URL for PlayStore</a></li>
-					<li><a href='#apk'>How to Generate Release APK</a></li>
-					<li><a href='#apk-iOS'>How to Publish iOS App to App Store</a></li>
+				<li><a href='#limit'>How Increase Product Load Limit</a></li>
+				<li><a href='#api'>How Change Api parameter</a></li>
+				<li><a href='#privacy'>Get Privacy-Policy URL for PlayStore</a></li>
+				<li><a href='#apk'>How to Generate Release APK</a></li>
+				<li><a href='#apk-iOS'>How to Publish iOS App to App Store</a></li>
 
-					<li><a href="#support">Need Support?</a></li>
-					<li><a href="#rating">Your Feedback</a></li>
-					<li><a href='#contactus'>Contact Us</a></li>
+				<li><a href="#support">Need Support?</a></li>
+				<li><a href="#rating">Your Feedback</a></li>
+				<li><a href='#contactus'>Contact Us</a></li>
 
-				</ul>
-			</nav>
-		</section>
-		<div id="wrapper">
-			<div id="main">
-				<section id="one">
-					<div class="container">
+			</ul>
+		</nav>
+	</section>
+	<div id="wrapper">
+		<div id="main">
+			<section id="one">
+				<div class="container">
 
 
-						<header class="major">
-							<h4>eGrocer - Flutter Grocery Full App</h4>
-						</header>
-						<div class="borderTop">
-							<div class="span-6 colborder info prepend-1">
-								<p class="prepend-top"> <strong> <br>
-										Author: WRTeam <br>
-										Contact: <a href="https://codecanyon.net/user/wrteam" style='color:#f90849'
-											target="_blank">CodeCanyon Profile</a> </strong> </p>
-							</div>
-							<div class="span-12 last">
-								<p class="prepend-top append-0">Thank you for purchasing the code. If you have any
-									questions that are beyond the scope of this help file, please feel free to message
-									me via my user page contact form <a href="https://codecanyon.net/user/wrteam"
-										style='color:#3c55d1' target="_blank">here</a>. Thanks so much!</p>
-							</div>
+					<header class="major">
+						<h4>eGrocer - Flutter Grocery Full App</h4>
+					</header>
+					<div class="borderTop">
+						<div class="span-6 colborder info prepend-1">
+							<p class="prepend-top"> <strong> <br>
+									Author: WRTeam <br>
+									Contact: <a href="https://codecanyon.net/user/wrteam" style='color:#f90849'
+										target="_blank">CodeCanyon Profile</a> </strong> </p>
 						</div>
+						<div class="span-12 last">
+							<p class="prepend-top append-0">Thank you for purchasing the code. If you have any
+								questions that are beyond the scope of this help file, please feel free to message
+								me via my user page contact form <a href="https://codecanyon.net/user/wrteam"
+									style='color:#3c55d1' target="_blank">here</a>. Thanks so much!</p>
+						</div>
+					</div>
 
 
-						<section id="setupJDK">
-							<div class="container"> <br>
-								<h2>How to Setup Java jdk-11 on windows</h2>
-								<ol>
-									<li> If your System already have Java jdk-8 installed then you can skip this step.
+					<section id="setupJDK">
+						<div class="container"> <br>
+							<h2>How to Setup Java jdk-11 on windows</h2>
+							<ol>
+								<li> If your System already have Java jdk-8 installed then you can skip this step.
+									<br>
+								</li>
+								<li>Download Java-11 jdk by clicking below link. <br> (<a style="color: #3C55D1;"
+										href="https://www.oracle.com/java/technologies/downloads/#java11">JAVA
+										jdk-11</a>)</li>
+								<li>Download Java-11 JDK for your version 32 bit or JDK download 64 bit.</li>
+								<br>
+								<img src="images/java-jdk11.webp" alt="Flutter UI Component" />
+								<br><br>
+								<li>When you click on the Installation link the popup will be open. Click on I
+									reviewed and accept the Oracle Technology Network License Agreement for Oracle
+									Java SE development kit and you will be redirected to the login page. If you
+									don’t have an oracle account you can easily sign up by adding basics details of
+									yours.</li>
+								<br><br>
+								<img src="images/accept agreement.webp" alt="Flutter UI Component" />
+								<br><br>
+								<li>Once the Java JDK 11 download is complete, run the exe for install JDK. Click
+									Next</li>
+								<br>
+								<img src="images/javainstall-next.webp" alt="Flutter UI Component" />
+								<br><br>
+								<li>Select the PATH to install Java in Windows… You can leave it Default. Click
+									next.
+								</li>
+								<br>
+								<img src="images/javainstall-save.webp" alt="Flutter UI Component" />
+								<br><br>
+								<li>Once you install Java in windows, click Close
+								</li>
+								<br>
+								<img src="images/javainstall-close.webp" alt="Flutter UI Component" />
+								<br><br>
+								<li>Now set your enviournment variable</li>
+								<li>From the Start search bar in , type ‘env’ and select Edit environment variables
+									for your account</li>
+								<br>
+								<img src="images/path.webp" alt="Flutter UI Component" />
+								<br><br>
+								<li>Under User variables check if there is an entry called Path:</li>
+								<li>Click on Edit. then Dialog will open from it,
+									now click on new and Copy the path of bin folder which is installed in JDK
+									folder.
+									then Paste Path of bin folder in Variable value. Click on OK Button.</li>
+								<img src="images/path2.webp" alt="Flutter UI Component" /><br><br>
+								<li>Repeat above process but this time set variable name <b>JAVA_HOME</b> instead of
+									"path/PATH",
+									and set JDK bin folder path in the variable value.</li>
+								<li>Now Restart your pc for changes to take effect</li> <br>
+								<li>Now check everything is ok or not</li>
+								<li>Go to command prompt and type javac commands. <br>
+									If you see a screen like below, Java is installed.</li><br>
+								<img src="images/checkversion.webp" alt="Flutter UI Component" /><br><br>
+							</ol>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
+					<section id="setup">
+						<div class="container"> <br>
+							<h2>How to Setup Flutter in Android Studio</h2>
+
+							<ol>
+
+								<li>Download Lastest Flutter SDK from below link.in that click on
+									flutter_window_xxx.zip button.</li>
+
+								<li><a href="https://flutter.dev/docs/get-started/install/windows">Flutter sdk
+										Here</a></li>
+								<br>
+								<img src="images/setup.webp" alt="Flutter UI Component" />
+								<br><br>
+								<li>Extract the zip file and copy flutter folder into your desired installation
+									location for the Flutter SDK (eg. C:\src\flutter; do not install Flutter in a
+									directory like C:\Program Files\).</li>
+								<br>
+								<li>Inside Flutter folder find flutter_console.bat. Start it by double-clicking.
+									<\li><br><br>
+										<img src="images/setup2.webp" alt="Flutter UI Component" />
 										<br>
-									</li>
-									<li>Download Java-11 jdk by clicking below link. <br> (<a style="color: #3C55D1;"
-											href="https://www.oracle.com/java/technologies/downloads/#java11">JAVA
-											jdk-11</a>)</li>
-									<li>Download Java-11 JDK for your version 32 bit or JDK download 64 bit.</li>
-									<br>
-									<img src="images/java-jdk11.webp" alt="Flutter UI Component" />
-									<br><br>
-									<li>When you click on the Installation link the popup will be open. Click on I
-										reviewed and accept the Oracle Technology Network License Agreement for Oracle
-										Java SE development kit and you will be redirected to the login page. If you
-										don’t have an oracle account you can easily sign up by adding basics details of
-										yours.</li>
-									<br><br>
-									<img src="images/accept agreement.webp" alt="Flutter UI Component" />
-									<br><br>
-									<li>Once the Java JDK 11 download is complete, run the exe for install JDK. Click
-										Next</li>
-									<br>
-									<img src="images/javainstall-next.webp" alt="Flutter UI Component" />
-									<br><br>
-									<li>Select the PATH to install Java in Windows… You can leave it Default. Click
-										next.
-									</li>
-									<br>
-									<img src="images/javainstall-save.webp" alt="Flutter UI Component" />
-									<br><br>
-									<li>Once you install Java in windows, click Close
-									</li>
-									<br>
-									<img src="images/javainstall-close.webp" alt="Flutter UI Component" />
-									<br><br>
-									<li>Now set your enviournment variable</li>
-									<li>From the Start search bar in , type ‘env’ and select Edit environment variables
-										for your account</li>
-									<br>
-									<img src="images/path.webp" alt="Flutter UI Component" />
-									<br><br>
-									<li>Under User variables check if there is an entry called Path:</li>
-									<li>Click on Edit. then Dialog will open from it,
-										now click on new and Copy the path of bin folder which is installed in JDK
-										folder.
-										then Paste Path of bin folder in Variable value. Click on OK Button.</li>
-									<img src="images/path2.webp" alt="Flutter UI Component" /><br><br>
-									<li>Repeat above process but this time set variable name <b>JAVA_HOME</b> instead of
-										"path/PATH",
-										and set JDK bin folder path in the variable value.</li>
-									<li>Now Restart your pc for changes to take effect</li> <br>
-									<li>Now check everything is ok or not</li>
-									<li>Go to command prompt and type javac commands. <br>
-										If you see a screen like below, Java is installed.</li><br>
-									<img src="images/checkversion.webp" alt="Flutter UI Component" /><br><br>
-								</ol>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
-						<section id="setup">
-							<div class="container"> <br>
-								<h2>How to Setup Flutter in Android Studio</h2>
-
-								<ol>
-
-									<li>Download Lastest Flutter SDK from below link.in that click on
-										flutter_window_xxx.zip button.</li>
-
-									<li><a href="https://flutter.dev/docs/get-started/install/windows">Flutter sdk
-											Here</a></li>
-									<br>
-									<img src="images/setup.webp" alt="Flutter UI Component" />
-									<br><br>
-									<li>Extract the zip file and copy flutter folder into your desired installation
-										location for the Flutter SDK (eg. C:\src\flutter; do not install Flutter in a
-										directory like C:\Program Files\).</li>
-									<br>
-									<li>Inside Flutter folder find flutter_console.bat. Start it by double-clicking.
-										<\li><br><br>
-											<img src="images/setup2.webp" alt="Flutter UI Component" />
-											<br>
-									<li>Now set your enviournment variable</li>
-									<li>From the Start search bar in , type ‘env’ and select Edit environment variables
-										for your account</li>
+								<li>Now set your enviournment variable</li>
+								<li>From the Start search bar in , type ‘env’ and select Edit environment variables
+									for your account</li>
 
 
-									<br>
-									<img src="images/path.webp" alt="Flutter UI Component" />
-									<br><br>
+								<br>
+								<img src="images/path.webp" alt="Flutter UI Component" />
+								<br><br>
 
-									<li>Under User variables check if there is an entry called Path:</li>
-									<li>Click on Edit.new Dialog open from it click on new and copy full path to
-										flutter\bin as its value</li>
-									<li>Now Restart your pc for changes to take effect</li>
-									<img src="images/path2.webp" alt="Flutter UI Component" /><br><br>
-									<li>Now check everything is ok or not</li>
-									<li>open cmd and do following shown in below picture</li><br>
-									<img src="images/check.webp" alt="Flutter UI Component" /><br><br>
-									<li>Now open Android Studio and create new flutter project then select your flutter
-										sdk file to the location where we have downloaded earlier and that's it</li>
-									<br><img src="images/flutter.webp" alt="Flutter UI Component" /><br><br>
-
-
-								</ol>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
+								<li>Under User variables check if there is an entry called Path:</li>
+								<li>Click on Edit.new Dialog open from it click on new and copy full path to
+									flutter\bin as its value</li>
+								<li>Now Restart your pc for changes to take effect</li>
+								<img src="images/path2.webp" alt="Flutter UI Component" /><br><br>
+								<li>Now check everything is ok or not</li>
+								<li>open cmd and do following shown in below picture</li><br>
+								<img src="images/check.webp" alt="Flutter UI Component" /><br><br>
+								<li>Now open Android Studio and create new flutter project then select your flutter
+									sdk file to the location where we have downloaded earlier and that's it</li>
+								<br><img src="images/flutter.webp" alt="Flutter UI Component" /><br><br>
 
 
-						<section id="flutter2">
-							<div class="container"> <br>
-								<h2>Upgrade to flutter 2.x error</h2>
-
-								<ol>
-									<li>for upgrade go to terminal in android studio and type flutter upgrade it will
-										automatically pick latest version with stable channel</li>
-
-									<li>If you have updated flutter 2.x after upgrade run flutter doctor. and in flutter
-										doctor if you see below error like licence status unknown.</li><br>
-									<img src="images/upgrade1.webp" alt="eGrocer" />
-									<br><br>
-									<li>then go to sdk manager from upar right corner then go to android sdk inside that
-										sdk tools and then uncheck hide obsolute package then check android sdk command
-										line tool latest then apply and then ok. it will download latest version as
-										shown in below fig.</li><br>
-									<img src="images/upgrade2.webp" alt="eGrocer" /><br><br>
-									<li>now run flutter doctor again your error will be removed</li>
-
-								</ol>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
-
-						<section id="open">
-							<div class="container"> <br>
-								<h2>How to first run project</h2>
-
-								<ol>
-
-									<img src="images/open2.webp" alt="eGrocer" />
-									<br><br>
-									<li>Go to file > open > then choose your downloaded project location then your
-										project will open.and if you see upar right part 'enable dart support' then
-										click that and go to pubspec.yaml file and in uper right part click pub get or
-										package get and then press run button.</li><br>
-								</ol>
-								<ol>
-									<li><b>If your are getting error then you can perform below hack</b>
-
-									<li>if in your system firewall is on, then you can temporary disable firewall and
-										then try to run project</li>
-
-									<li>if your flutter channel is not stable then you need to change it to stable. you
-										can check your flutter channel by terminal. </li>
-									<li>go to android studio in bottom line click on terminal, in terminal write flutter
-										channel.as shown below.</li>
-									<br>
-									<img src="images/ch1.webp" alt="eGrocer" />
-									<br><br>
-									<li>if your are not in stable then write flutter channel stable</li>
-
-									<li>go to Tools > Flutter > Flutter Clen.</li>
-									<li>go to file > invalidate cache/ restart</li>
+							</ol>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
 
 
-								</ol>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
+					<section id="flutter2">
+						<div class="container"> <br>
+							<h2>Upgrade to flutter 2.x error</h2>
+
+							<ol>
+								<li>for upgrade go to terminal in android studio and type flutter upgrade it will
+									automatically pick latest version with stable channel</li>
+
+								<li>If you have updated flutter 2.x after upgrade run flutter doctor. and in flutter
+									doctor if you see below error like licence status unknown.</li><br>
+								<img src="images/upgrade1.webp" alt="eGrocer" />
+								<br><br>
+								<li>then go to sdk manager from upar right corner then go to android sdk inside that
+									sdk tools and then uncheck hide obsolute package then check android sdk command
+									line tool latest then apply and then ok. it will download latest version as
+									shown in below fig.</li><br>
+								<img src="images/upgrade2.webp" alt="eGrocer" /><br><br>
+								<li>now run flutter doctor again your error will be removed</li>
+
+							</ol>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
+
+					<section id="open">
+						<div class="container"> <br>
+							<h2>How to first run project</h2>
+
+							<ol>
+
+								<img src="images/open2.webp" alt="eGrocer" />
+								<br><br>
+								<li>Go to file > open > then choose your downloaded project location then your
+									project will open.and if you see upar right part 'enable dart support' then
+									click that and go to pubspec.yaml file and in uper right part click pub get or
+									package get and then press run button.</li><br>
+							</ol>
+							<ol>
+								<li><b>If your are getting error then you can perform below hack</b>
+
+								<li>if in your system firewall is on, then you can temporary disable firewall and
+									then try to run project</li>
+
+								<li>if your flutter channel is not stable then you need to change it to stable. you
+									can check your flutter channel by terminal. </li>
+								<li>go to android studio in bottom line click on terminal, in terminal write flutter
+									channel.as shown below.</li>
+								<br>
+								<img src="images/ch1.webp" alt="eGrocer" />
+								<br><br>
+								<li>if your are not in stable then write flutter channel stable</li>
+
+								<li>go to Tools > Flutter > Flutter Clen.</li>
+								<li>go to file > invalidate cache/ restart</li>
 
 
-						<section id="appname">
-							<div class="container"> <br>
-								<h2>How to change AppName</h2>
-
-								<ol>
-
-									<img src="images/appname1.webp" alt="eGrocer" />
-									<br><br>
-									<li>For Android, to change label that is shown below android app icon, open android
-										> app > src > main > open mainfest.xml and inside that label change that string
-										as shown in below fig. </li><br>
-									<img src="images/appname2.webp" alt="eGrocer" />
-									<br><br>
-									<li>For iOS, to change label that is shown below ios app icon, open ios > Runner >
-										Info.plist inside that <key>CFBundleName</key> change that string as shown in
-										below fig. </li><br>
-									<img src="images/appname3.webp" alt="eGrocer" />
-
-								</ol>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
-
-						<section id="version">
-							<div class="container"> <br>
-								<h2>How to change App Version</h2>
-
-								<ol>
+							</ol>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
 
 
-									<li>go to pubspec.yaml </li>
-									<li>EX.Update version:A.B.C+X in pubspec.yaml.
-									<li>For Android:</li>
-									A.B.C represents the versionName such as 1.0.0.
+					<section id="appname">
+						<div class="container"> <br>
+							<h2>How to change AppName</h2>
 
-									X (the number after the +) represents the versionCode such as 1, 2, 3, etc.</li>
+							<ol>
 
-									<li><b>Do not forget</b> to execute flutter packages get, flutter build or flutter
-										run after this step
-									</li><br><br>
+								<img src="images/appname1.webp" alt="eGrocer" />
+								<br><br>
+								<li>For Android, to change label that is shown below android app icon, open android
+									> app > src > main > open mainfest.xml and inside that label change that string
+									as shown in below fig. </li><br>
+								<img src="images/appname2.webp" alt="eGrocer" />
+								<br><br>
+								<li>For iOS, to change label that is shown below ios app icon, open ios > Runner >
+									Info.plist inside that <key>CFBundleName</key> change that string as shown in
+									below fig. </li><br>
+								<img src="images/appname3.webp" alt="eGrocer" />
 
-									<img src="images/version_1.webp" alt="eGrocer" />
-									<br><br>
+							</ol>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
 
-									<li>For iOS</li>
-									<li>
+					<section id="version">
+						<div class="container"> <br>
+							<h2>How to change App Version</h2>
 
-										A.B.C represents the CFBundleShortVersionString such as 1.0.0.
-
-										X (the number after the +) represents the CFBundleVersion such as 1, 2, 3, etc.
-									</li>
-
-									<li><b>Do not forget</b> to execute flutter packages get, flutter build or flutter
-										run after this step</li>
-
-								</ol>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
-
-
-						<section id="applogo">
-							<div class="container"> <br>
-								<h2>How to Change app logo</h2>
-								<ol>
-
-									<li>For Android, open android > app > src > main > res > mipmap add here your logo
-										according to device screen size </li><br>
-									<img src="images/logo_1.webp" alt="eGrocer" />
-									<br><br>
-									<li>For iOS, open ios > Runner > Assets.xcassets > AppIcon.appiconset here you need
-										to put your logo according to diffrent size. </li><br>
-									<img src="images/logo_2.webp" alt="eGrocer" />
-
-								</ol>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
+							<ol>
 
 
-						<section id="appcolor">
-							<div class="container"> <br>
-								<h2>How to Change app color</h2>
-								<ol>
+								<li>go to pubspec.yaml </li>
+								<li>EX.Update version:A.B.C+X in pubspec.yaml.
+								<li>For Android:</li>
+								A.B.C represents the versionName such as 1.0.0.
 
-									<li>To change app color, your need to add your color code in lib > helper>
-										color.dart</li>
-									<li>In flutter color code start from 0xff so your have to add your color hex after
-										this 4 digit.your can change primary,second,fontcolor as shown in below image.
-									</li><br>
+								X (the number after the +) represents the versionCode such as 1, 2, 3, etc.</li>
 
-									<img src="images/appcolor.webp" alt="eGrocer" />
-									<br><br>
+								<li><b>Do not forget</b> to execute flutter packages get, flutter build or flutter
+									run after this step
+								</li><br><br>
+
+								<img src="images/version_1.webp" alt="eGrocer" />
+								<br><br>
+
+								<li>For iOS</li>
+								<li>
+
+									A.B.C represents the CFBundleShortVersionString such as 1.0.0.
+
+									X (the number after the +) represents the CFBundleVersion such as 1, 2, 3, etc.
+								</li>
+
+								<li><b>Do not forget</b> to execute flutter packages get, flutter build or flutter
+									run after this step</li>
+
+							</ol>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
 
 
-								</ol>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
-						<!-- 
+					<section id="applogo">
+						<div class="container"> <br>
+							<h2>How to Change app logo</h2>
+							<ol>
+
+								<li>For Android, open android > app > src > main > res > mipmap add here your logo
+									according to device screen size </li><br>
+								<img src="images/logo_1.webp" alt="eGrocer" />
+								<br><br>
+								<li>For iOS, open ios > Runner > Assets.xcassets > AppIcon.appiconset here you need
+									to put your logo according to diffrent size. </li><br>
+								<img src="images/logo_2.webp" alt="eGrocer" />
+
+							</ol>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
+
+
+					<section id="appcolor">
+						<div class="container"> <br>
+							<h2>How to Change app color</h2>
+							<ol>
+
+								<li>To change app color, your need to add your color code in lib > helper>
+									color.dart</li>
+								<li>In flutter color code start from 0xff so your have to add your color hex after
+									this 4 digit.your can change primary,second,fontcolor as shown in below image.
+								</li><br>
+
+								<img src="images/appcolor.webp" alt="eGrocer" />
+								<br><br>
+
+
+							</ol>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
+					<!-- 
 						<section id="animationcolor">
 							<div class="container"> <br>
 								<h2>How to Change Animation color</h2>
@@ -466,357 +451,357 @@
 							</div>
 						</section> -->
 
-						<section id="packagename">
-							<div class="container"> <br>
-								<h2>How to change package name</h2>
-								<ol>
-									<li>To change package name press ctrl + shift + R and enter or you can have change
-										it manually buy replace package name
-										(Please refer below 2 images images on by one).</li>
+					<section id="packagename">
+						<div class="container"> <br>
+							<h2>How to change package name</h2>
+							<ol>
+								<li>To change package name press ctrl + shift + R and enter or you can have change
+									it manually buy replace package name
+									(Please refer below 2 images images on by one).</li>
 
-									<img src="images/packagename_1.webp" alt="eGrocer" /><br><br>
-									<li>After step 1 follow below image</li>
-									<img src="images/packagename_2.webp" alt="eGrocer" /><br><br>
-									<li> When You are changing package name the you also need change name of folders
-										according to your package name in (android\app\src\main\kotlin\) location in
-										project.</li>
-									<br>
-									<li>For Example if Package name is "com.wrteam.egrocer" Then inside kotlin folder
-										folder stucture are com\wrteam\egrocer. now this folder
-										structure will change as per your package name if your package name is
-										"com.wrteam.egrocer" then new folder structure is wrteam\eGrocer\customer.</li>
-									<br>
-									<li>Go to app folder from exploer not from android studio</li>
-									<img src="images/packagename_3.webp" alt="eGrocer" /><br><br><br>
-									<li>For change name of this folders just open your project folder navigate inside
-										the
-										kotlin folder just rename the folders according to your package name . Note :
-										(Sometime you got issue dou to this reason.)</li>
-									<img src="images/packagename_4.webp" alt="eGrocer" /></li>
-									<br><br>
-									<li>Some Doubt regarding package name change <br>
-										<ul>
-											<li>What if my package name is like this
-												com.wrteam.egrocer.customer, so
-												how can i make folder structure ?</li>
-											<li><strong>In this situation you have to add
-													one folder according to your package name , now you have 4 folder
-													inside
-													the
-													kotline folder like this
-													\com\wrteam\egrocer\customer</strong></li>
-										</ul>
-									</li><br>
-								</ol>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
-
-
-
-						<section id="assetimage">
-							<div class="container"> <br>
-								<h2>How to Change Images in app</h2>
-								<ol>
-
-									<li>Go to Assets > images folder. here you have 2 folders 1.webp 2.svg. you can
-										change your image to exist image with same name.</li><br>
-
-									<img src="images/imageschange.webp" alt="eGrocer" />
-									<br><br>
-
-
-								</ol>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
-						<section id="addlanguage">
-							<div class="container"> <br>
-								<div style="display: flex; flex-direction: row;">
-									<h2>How to manage apps languages?</h2>
-									<a href="https://youtu.be/A3o6G5UnVnE" target="_blank"><img class="youtube"
-											src="../images/youtube.svg" alt="How to add/remove languages?"></a>
-								</div>
-
-								<ol>
-									<li>You can manage all app, website languages from the admin panel.</li>
-									<li>Go to Admin Panel > Language > Add Language OR Manage Languages</li>
-									<br>
-									<img src="images/lan1.webp" alt="eGrocer" />
-									<br><br>
-
-
-								</ol>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
-						<section id="appfont">
-							<div class="container"> <br>
-								<h2>How to change app font?</h2>
-								<ol>
-
-									<li>Go to assets > fonts folder .here you have to copy your font.now go to
-										pubspec.yaml in font section change your font name
-										as shown in below image.</li><br>
-
-									<img src="images/font.webp" alt="eGrocer" />
-									<br><br>
-
-
-								</ol>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
-
-						<section id="serverurl">
-							<div class="container"> <br>
-								<h2>How to Change server url</h2>
-								<ol>
-									<li>Open your admin panel, copy link from url as per below screenshot instruction in
-										image.
-									</li>
-
-									<img src="images/serverurladmin.webp" alt="eGrocer" />
-									<br><br>
-
-									<li>In android code go to lib > helper > utils > constant.dart and paste url as per
-										instruction.
-									</li>
-
-									<img src="images/serverurladmin2.webp" alt="eGrocer" />
-									<br><br>
-								</ol>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
-
-						<section id="create_fcm">
-							<div class="container"> <br>
-								<h2>How to create Flutter Firebase App</h2>
-								<ol>
+								<img src="images/packagename_1.webp" alt="eGrocer" /><br><br>
+								<li>After step 1 follow below image</li>
+								<img src="images/packagename_2.webp" alt="eGrocer" /><br><br>
+								<li> When You are changing package name the you also need change name of folders
+									according to your package name in (android\app\src\main\kotlin\) location in
+									project.</li>
+								<br>
+								<li>For Example if Package name is "com.wrteam.egrocer" Then inside kotlin folder
+									folder stucture are com\wrteam\egrocer. now this folder
+									structure will change as per your package name if your package name is
+									"com.wrteam.egrocer" then new folder structure is wrteam\eGrocer\customer.</li>
+								<br>
+								<li>Go to app folder from exploer not from android studio</li>
+								<img src="images/packagename_3.webp" alt="eGrocer" /><br><br><br>
+								<li>For change name of this folders just open your project folder navigate inside
+									the
+									kotlin folder just rename the folders according to your package name . Note :
+									(Sometime you got issue dou to this reason.)</li>
+								<img src="images/packagename_4.webp" alt="eGrocer" /></li>
+								<br><br>
+								<li>Some Doubt regarding package name change <br>
 									<ul>
-										<li><strong style="color: red;">You need to add seller delivery boy app in
-												eGrocer customer's firebase project only, otherwise FCM notification
-												will not works and we will be not responsible for that issue. </strong>
-										</li>
-										<li><strong style="color: red;">For create firebase app from flutter you
-												must need to install firebase cli first.</strong>
-										</li>
-										<li><strong>To
-												install firebase cli
-												follow this <a style="color: blue;"
-													href="https://firebase.google.com/docs/cli">https://firebase.google.com/docs/cli</a></strong>
-										</li>
-										<li><strong style="color: red;">After firebase cli install you can follow below
-												steps</strong>
-										</li>
+										<li>What if my package name is like this
+											com.wrteam.egrocer.customer, so
+											how can i make folder structure ?</li>
+										<li><strong>In this situation you have to add
+												one folder according to your package name , now you have 4 folder
+												inside
+												the
+												kotline folder like this
+												\com\wrteam\egrocer\customer</strong></li>
 									</ul>
+								</li><br>
+							</ol>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
 
-									<li>Create flutter app (Follow below image)</li><br>
 
-									<img src="images/fcm6.webp" alt="eGrocer" />
-									<br><br>
 
-									<li>Press next</li><br>
-									<img src="images/fcm7.webp" alt="eGrocer" />
-									<br>
+					<section id="assetimage">
+						<div class="container"> <br>
+							<h2>How to Change Images in app</h2>
+							<ol>
 
-									<li>Now to to android studio terminall and run "firebase login" command in terminal,
-										and login to firebase from browser.
+								<li>Go to Assets > images folder. here you have 2 folders 1.webp 2.svg. you can
+									change your image to exist image with same name.</li><br>
 
-										<ul>
-											<li>Allow Firebase to collect CLI and Emulator Suite usage and error
-												reporting
-												information? set "YES" and press enter</li>
-										</ul>
-										</ul>
-									</li>
-									<img src="images/fcm8.webp" alt="eGrocer" /><br><br>
-									<br>
-									<li>Now you need to run command accoring to below image in android studio terminal
-									</li>
-									<img src="images/fcm9.webp" alt="eGrocer" /><br><br>
-
-									<li>Now you need to run 2nd command accoring to below image in android studio
-										terminal as well</li>
-									<br>
-									<img src="images/fcm10.webp" alt="eGrocer" /><br><br>
-
-									<li>Once show this kind of output press "Enter" in terminal</li>
-									<br>
-									<img src="images/fcm11.webp" alt="eGrocer" /><br><br>
-									<li>Once again show this kind of output press "y" in terminal</li>
-									<br>
-									<img src="images/fcm12.webp" alt="eGrocer" /><br><br>
-
-									<li>Press continue</li>
-									<br>
-									<img src="images/fcm13.webp" alt="eGrocer" /><br><br>
-									<li>Press continue to console</li>
-									<br>
-									<img src="images/fcm14.webp" alt="eGrocer" /><br><br>
-
-									<li>Your firebase setup is done.</li>
-									<br>
-
-								</ol>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
-
-						<section id="fcm">
-
-							<div class="container">
-								<h2>How to set Notification</h2>
-								<ol>
-									<li> Get server key from your
-										firebase project and
-										set in panel.
-									</li>
-									<br /><img src="images/noti1.webp"></a><br /><br />
-									<li>now add in admin panel></li>
-									<br /><img src="images/noti2.webp"></a>
-								</ol>
-
+								<img src="images/imageschange.webp" alt="eGrocer" />
 								<br><br>
 
-								<ol>
-									<li>for ios your need to perform below given step</li>
-									<li>In Xcode, open the project.</li>
-									<li>In the Project Navigator (the left-hand menu), select the project icon that
-										represents your app.</li>
-									<li>In the top-left corner of the right-hand pane in Xcode, select your app's
-										target.</li>
-									<li>Navigate to the Capabilities tab.</li>
-									<li>Enable Push Notifications.</li>
-									<li>Check Remote Notifications and Background Fetch from Enabling Background Modes.
-									</li><br>
-									<img src="images/1.webp"></a><br><br>
 
-
-
-									<li>APNs (Apple's Push Notification service) currently supports two types of
-										connections: token-based (.p8) and certificate-based (.p12).you can follow
-										either one of them</li>
-									<br>
-									<h4>For Token-based (.p8).</h4>
-									<li>Log in to the Apple Developer Portal.</li>
-									<li>Navigate to Certificates, IDs & Profiles > Identifiers > App IDs and click the
-										App ID associated with your app.</li>
-									<li>On the screen for your App ID, check Capabilities > Push Notifications.</li><br>
-
-									<img src="images/2.webp"></a><br><br>
-
-									<img src="images/3.webp"></a><br><br>
-
-									<li>Select App ID in next page & click continue.</li>
-									<li>And then create Development SSL Certificate & Production SSL Certificate by
-										adding CSR certificate. follow Apple's <a
-											href="https://help.apple.com/developer-account/" style="color:red">Create a
-											certificate signing request instructions.</a>
-
-									</li>
-									<li>Navigate to Certificates, IDs & Profiles > Keys Section and add a Universal key
-										for Notifications,which you can use for more than one apps as well.
-
-									</li>><br>
-
-									<img src="images/4.webp"></a><br><br>
-
-									<li>Just save and Download & keep it safe, as it will be downloaded only once.</li>
-
-									<br>
-
-									<img src="images/5.webp"></a><br><br>
-									<li>Then go to Firebase and add this .p8 file along with Your Key ID and Team ID.
-									</li>
-
-									<br>
-
-									<img src="images/6.webp"></a><br><br>
-
-
-									<h4>FOR certificate-based (.p12) :
-									</h4>
-									<br>
-									<li>Log in to the Apple Developer Portal.</li>
-									<li>Navigate to Certificates, IDs & Profiles > Identifiers > App IDs and click the
-										App ID associated with your app.</li>
-									<li>On the screen for your App ID, check Capabilities > Push Notifications.</li>
-									<li>Click Save and respond to the Modify App Capabilities dialog box that appears.
-									</li>
-									<li>To create the certificate, we will use to communicate with Apple when sending
-										push notifications:</li>
-									<ul>
-										<li>In a new browser tab, follow Apple's <a
-												href="https://help.apple.com/developer-account/#/devbfa00fef7"
-												style="color:red">Create a certificate signing request instructions.</a>
-										</li>
-										<li>In the Apple Developer Portal, navigate back to your App ID.</li>
-										<li>Click Capabilities > Push Notifications > Configure.</li>
-										<li>Click one of the following buttons:</li>
-										<ul>
-											<li>Development SSL Certificate > Create Certificate (for testing push
-												notifications while developing an iOS app)</li>
-											<li>Production SSL Certificate > Create Certificate (for sending push
-												notifications in production)</li>
-										</ul>
-										<li>Click Choose File and select the certificate signing request you created
-											above.</li>
-										<li>Click Continue.</li>
-
-										<li>Click Download to download the certificate.</li>
-										<li>Use this file to export a .p12 file in the next step.</li>
-
-									</ul>
-
-
-									<li>Navigate in the Apple Developer Portal to Certificates, IDs & Profiles >
-										Provisioning Profiles.</li>
-									<li>Click the provisioning profile you'd like to edit.</li>
-									<li>Edit the provisioning profile as necessary, and click Save.</li>
-									<li>Click Download, and double-click the downloaded provisioning profile to install
-										it.</li>
-									<li>Make sure your Xcode project is configured to use the provisioning profile as
-										necessary.Next, export the downloaded certificate (.cer file) as a .p12 file
-										that can be uploaded to firebase:</li>
-
-									<ul>
-										<li>On your Mac, double-click the .cer file to open it in Keychain Access.</li>
-										<li>In Keychain Access, in the lower-left corner, select Category >
-											Certificates.</li>
-										<li>Select the certificate to export.</li>
-										<li>Choose File > Export Items.</li>
-										<li>Enter a name in the Save As field.</li>
-										<li>Accept the default .p12 file format and click Save. Respond to the prompts,
-											and enter a password for the file if necessary.</li>
-										<li>Keep track of this file, since you'll upload it to firebase in a later step.
-										</li>
-
-
-
-										<br>
-
-										<img src="images/7.webp"></a><br><br>
-
-										<img src="images/8.webp"></a><br><br>
-
-
-
-								</ol>
-								</p>
-							</div>
 							</ol>
-						</section>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
+					<section id="addlanguage">
+						<div class="container"> <br>
+							<div style="display: flex; flex-direction: row;">
+								<h2>How to manage apps languages?</h2>
+								<a href="https://youtu.be/A3o6G5UnVnE" target="_blank"><img class="youtube"
+										src="../images/youtube.svg" alt="How to add/remove languages?"></a>
+							</div>
+
+							<ol>
+								<li>You can manage all app, website languages from the admin panel.</li>
+								<li>Go to Admin Panel > Language > Add Language OR Manage Languages</li>
+								<br>
+								<img src="images/lan1.webp" alt="eGrocer" />
+								<br><br>
 
 
-						<!-- <section id="link">
+							</ol>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
+					<section id="appfont">
+						<div class="container"> <br>
+							<h2>How to change app font?</h2>
+							<ol>
+
+								<li>Go to assets > fonts folder .here you have to copy your font.now go to
+									pubspec.yaml in font section change your font name
+									as shown in below image.</li><br>
+
+								<img src="images/font.webp" alt="eGrocer" />
+								<br><br>
+
+
+							</ol>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
+
+					<section id="serverurl">
+						<div class="container"> <br>
+							<h2>How to Change server url</h2>
+							<ol>
+								<li>Open your admin panel, copy link from url as per below screenshot instruction in
+									image.
+								</li>
+
+								<img src="images/serverurladmin.webp" alt="eGrocer" />
+								<br><br>
+
+								<li>In android code go to lib > helper > utils > constant.dart and paste url as per
+									instruction.
+								</li>
+
+								<img src="images/serverurladmin2.webp" alt="eGrocer" />
+								<br><br>
+							</ol>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
+
+					<section id="create_fcm">
+						<div class="container"> <br>
+							<h2>How to create Flutter Firebase App</h2>
+							<ol>
+								<ul>
+									<li><strong style="color: red;">You need to add seller delivery boy app in
+											eGrocer customer's firebase project only, otherwise FCM notification
+											will not works and we will be not responsible for that issue. </strong>
+									</li>
+									<li><strong style="color: red;">For create firebase app from flutter you
+											must need to install firebase cli first.</strong>
+									</li>
+									<li><strong>To
+											install firebase cli
+											follow this <a style="color: blue;"
+												href="https://firebase.google.com/docs/cli">https://firebase.google.com/docs/cli</a></strong>
+									</li>
+									<li><strong style="color: red;">After firebase cli install you can follow below
+											steps</strong>
+									</li>
+								</ul>
+
+								<li>Create flutter app (Follow below image)</li><br>
+
+								<img src="images/fcm6.webp" alt="eGrocer" />
+								<br><br>
+
+								<li>Press next</li><br>
+								<img src="images/fcm7.webp" alt="eGrocer" />
+								<br>
+
+								<li>Now to to android studio terminall and run "firebase login" command in terminal,
+									and login to firebase from browser.
+
+									<ul>
+										<li>Allow Firebase to collect CLI and Emulator Suite usage and error
+											reporting
+											information? set "YES" and press enter</li>
+									</ul>
+									</ul>
+								</li>
+								<img src="images/fcm8.webp" alt="eGrocer" /><br><br>
+								<br>
+								<li>Now you need to run command accoring to below image in android studio terminal
+								</li>
+								<img src="images/fcm9.webp" alt="eGrocer" /><br><br>
+
+								<li>Now you need to run 2nd command accoring to below image in android studio
+									terminal as well</li>
+								<br>
+								<img src="images/fcm10.webp" alt="eGrocer" /><br><br>
+
+								<li>Once show this kind of output press "Enter" in terminal</li>
+								<br>
+								<img src="images/fcm11.webp" alt="eGrocer" /><br><br>
+								<li>Once again show this kind of output press "y" in terminal</li>
+								<br>
+								<img src="images/fcm12.webp" alt="eGrocer" /><br><br>
+
+								<li>Press continue</li>
+								<br>
+								<img src="images/fcm13.webp" alt="eGrocer" /><br><br>
+								<li>Press continue to console</li>
+								<br>
+								<img src="images/fcm14.webp" alt="eGrocer" /><br><br>
+
+								<li>Your firebase setup is done.</li>
+								<br>
+
+							</ol>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
+
+					<section id="fcm">
+
+						<div class="container">
+							<h2>How to set Notification</h2>
+							<ol>
+								<li> Get server key from your
+									firebase project and
+									set in panel.
+								</li>
+								<br /><img src="images/noti1.webp"></a><br /><br />
+								<li>now add in admin panel></li>
+								<br /><img src="images/noti2.webp"></a>
+							</ol>
+
+							<br><br>
+
+							<ol>
+								<li>for ios your need to perform below given step</li>
+								<li>In Xcode, open the project.</li>
+								<li>In the Project Navigator (the left-hand menu), select the project icon that
+									represents your app.</li>
+								<li>In the top-left corner of the right-hand pane in Xcode, select your app's
+									target.</li>
+								<li>Navigate to the Capabilities tab.</li>
+								<li>Enable Push Notifications.</li>
+								<li>Check Remote Notifications and Background Fetch from Enabling Background Modes.
+								</li><br>
+								<img src="images/1.webp"></a><br><br>
+
+
+
+								<li>APNs (Apple's Push Notification service) currently supports two types of
+									connections: token-based (.p8) and certificate-based (.p12).you can follow
+									either one of them</li>
+								<br>
+								<h4>For Token-based (.p8).</h4>
+								<li>Log in to the Apple Developer Portal.</li>
+								<li>Navigate to Certificates, IDs & Profiles > Identifiers > App IDs and click the
+									App ID associated with your app.</li>
+								<li>On the screen for your App ID, check Capabilities > Push Notifications.</li><br>
+
+								<img src="images/2.webp"></a><br><br>
+
+								<img src="images/3.webp"></a><br><br>
+
+								<li>Select App ID in next page & click continue.</li>
+								<li>And then create Development SSL Certificate & Production SSL Certificate by
+									adding CSR certificate. follow Apple's <a
+										href="https://help.apple.com/developer-account/" style="color:red">Create a
+										certificate signing request instructions.</a>
+
+								</li>
+								<li>Navigate to Certificates, IDs & Profiles > Keys Section and add a Universal key
+									for Notifications,which you can use for more than one apps as well.
+
+								</li>><br>
+
+								<img src="images/4.webp"></a><br><br>
+
+								<li>Just save and Download & keep it safe, as it will be downloaded only once.</li>
+
+								<br>
+
+								<img src="images/5.webp"></a><br><br>
+								<li>Then go to Firebase and add this .p8 file along with Your Key ID and Team ID.
+								</li>
+
+								<br>
+
+								<img src="images/6.webp"></a><br><br>
+
+
+								<h4>FOR certificate-based (.p12) :
+								</h4>
+								<br>
+								<li>Log in to the Apple Developer Portal.</li>
+								<li>Navigate to Certificates, IDs & Profiles > Identifiers > App IDs and click the
+									App ID associated with your app.</li>
+								<li>On the screen for your App ID, check Capabilities > Push Notifications.</li>
+								<li>Click Save and respond to the Modify App Capabilities dialog box that appears.
+								</li>
+								<li>To create the certificate, we will use to communicate with Apple when sending
+									push notifications:</li>
+								<ul>
+									<li>In a new browser tab, follow Apple's <a
+											href="https://help.apple.com/developer-account/#/devbfa00fef7"
+											style="color:red">Create a certificate signing request instructions.</a>
+									</li>
+									<li>In the Apple Developer Portal, navigate back to your App ID.</li>
+									<li>Click Capabilities > Push Notifications > Configure.</li>
+									<li>Click one of the following buttons:</li>
+									<ul>
+										<li>Development SSL Certificate > Create Certificate (for testing push
+											notifications while developing an iOS app)</li>
+										<li>Production SSL Certificate > Create Certificate (for sending push
+											notifications in production)</li>
+									</ul>
+									<li>Click Choose File and select the certificate signing request you created
+										above.</li>
+									<li>Click Continue.</li>
+
+									<li>Click Download to download the certificate.</li>
+									<li>Use this file to export a .p12 file in the next step.</li>
+
+								</ul>
+
+
+								<li>Navigate in the Apple Developer Portal to Certificates, IDs & Profiles >
+									Provisioning Profiles.</li>
+								<li>Click the provisioning profile you'd like to edit.</li>
+								<li>Edit the provisioning profile as necessary, and click Save.</li>
+								<li>Click Download, and double-click the downloaded provisioning profile to install
+									it.</li>
+								<li>Make sure your Xcode project is configured to use the provisioning profile as
+									necessary.Next, export the downloaded certificate (.cer file) as a .p12 file
+									that can be uploaded to firebase:</li>
+
+								<ul>
+									<li>On your Mac, double-click the .cer file to open it in Keychain Access.</li>
+									<li>In Keychain Access, in the lower-left corner, select Category >
+										Certificates.</li>
+									<li>Select the certificate to export.</li>
+									<li>Choose File > Export Items.</li>
+									<li>Enter a name in the Save As field.</li>
+									<li>Accept the default .p12 file format and click Save. Respond to the prompts,
+										and enter a password for the file if necessary.</li>
+									<li>Keep track of this file, since you'll upload it to firebase in a later step.
+									</li>
+
+
+
+									<br>
+
+									<img src="images/7.webp"></a><br><br>
+
+									<img src="images/8.webp"></a><br><br>
+
+
+
+							</ol>
+							</p>
+						</div>
+						</ol>
+					</section>
+
+
+					<!-- <section id="link">
 							<div class="container">
 								<h2>Steps to Create Dynamic Link</h2>
 								<ol>
@@ -876,7 +861,7 @@
 							</div>
 						</section> -->
 
-						<!-- <section id="map1">
+					<!-- <section id="map1">
 							<div class="container"> <br>
 								<h2>How to Add Map API key for Address</h2>
 								<ol>
@@ -1019,54 +1004,54 @@
 							</div>
 						</section> -->
 
-						<section id="limit">
-							<div class="container">
-								<h2>How to Increase Product Load Limit</h2>
-								<ol>
-									<li>you can chnage at a time when request send to server how many item will fetch.go
-										to lib > helper > Constant.dart </li>
-									<li>Please check below given image.</li>
-									<br><img src="images/limit.webp"></a>
-									<br>
-								</ol>
-								<div class="section_bdr"></div>
-							</div>
-						</section>
+					<section id="limit">
+						<div class="container">
+							<h2>How to Increase Product Load Limit</h2>
+							<ol>
+								<li>you can chnage at a time when request send to server how many item will fetch.go
+									to lib > helper > Constant.dart </li>
+								<li>Please check below given image.</li>
+								<br><img src="images/limit.webp"></a>
+								<br>
+							</ol>
+							<div class="section_bdr"></div>
+						</div>
+					</section>
 
-						<section id="api">
-							<div class="container">
-								<h2>Change Api Parameter</h2>
-								<ol>
-									<li>You can change or add api parameter from lib > Helper > String.dart. here all
-										list of api and api paramater is listed that is used in app.</li>
-									<br>
-									<img src="images/api.webp" alt="eGrocer" /><br><br>
-								</ol>
+					<section id="api">
+						<div class="container">
+							<h2>Change Api Parameter</h2>
+							<ol>
+								<li>You can change or add api parameter from lib > Helper > String.dart. here all
+									list of api and api paramater is listed that is used in app.</li>
+								<br>
+								<img src="images/api.webp" alt="eGrocer" /><br><br>
+							</ol>
 
-								<p> </p>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
+							<p> </p>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
 
-						<section id="privacy">
-							<div class="container">
-								<h2>Get Privacy-Policy URL for PlayStore</h2>
-								<ol>
-									<li>First login to admin panel.</li>
-									<li>System > Privacy Policy </li><br>
-									<a href="#privacy"><img src="images/privacy.webp"></a><br><br>
-								</ol>
-								<div class="section_bdr"></div>
-							</div>
-						</section>
+					<section id="privacy">
+						<div class="container">
+							<h2>Get Privacy-Policy URL for PlayStore</h2>
+							<ol>
+								<li>First login to admin panel.</li>
+								<li>System > Privacy Policy </li><br>
+								<a href="#privacy"><img src="images/privacy.webp"></a><br><br>
+							</ol>
+							<div class="section_bdr"></div>
+						</div>
+					</section>
 
-						<section id="apk">
-							<div class="container">
-								<h2>How to generate release apks</h2>
+					<section id="apk">
+						<div class="container">
+							<h2>How to generate release apks</h2>
 
 
-								<!-- There are Two ways to generate an APK.<br><br>
+							<!-- There are Two ways to generate an APK.<br><br>
                                     <ol type="1">
                                        <b> By using Android module</b>
                                     <ul>
@@ -1093,303 +1078,301 @@
                                     </ul>
                                     <br>
                                     <b>By using Commands</b> -->
-								<ol>
+							<ol>
 
-									<li>
-										Create an upload keystore<br>
-										Running the following at the command line:<br>
-										<ul>
-											<li>
-												On Mac/Linux, use the following command: <br><br>
-												keytool -genkey -v -keystore ~/upload-keystore.jks -keyalg RSA -keysize
-												2048 -validity 10000 -alias upload
-												<br><br>
-											</li>
-											<li>
-												On Windows, use the following command:<br><br>
-												keytool -genkey -v -keystore c:\Users\USER_NAME\upload-keystore.jks
-												-storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
-												<br><br>
-											</li>
-
-										</ul>
-										<img src="images/modifyPath.webp" alt="eGrocer" /><br><br>
-										<img src="images/remeberPassword.webp" alt="eGrocer" /><br><br>
-										<img src="images/success.webp" alt="eGrocer" /><br><br>
-
-									</li>
-
-									<li>
-										Reference the keystore from the app<br><br>
-										Create a file named [project]/android/key.properties that contains a reference
-										to your keystore:<br>
-										<br>
-
-
-
-										<img src="images/createfile.webp" alt="eGrocer" /><br><br>
-
-										Copy below code, Paste in to key.propertirs file and change as per shown in
-										image.<br><br>
-
-										storePassword=<password from previous step> <br>
-											keyPassword=<password from previous step> <br>
-												keyAlias=upload <br>
-												storeFile=location of the key store file, such as /Users/user
-												name/upload-keystore.jks<br><br>
-												<img src="images/setPath.webp" alt="eGrocer" /><br><br>
-
-
-									</li>
-
-									<li>
-										Configure signing in gradle <br><br>
-										Configure gradle to use your upload key when building your app in release mode
-										by editing the [project]/android/app/build.gradle file.<br>
-
-										<ul>
-											<li>
-												Add the below keystore information from your properties file before the
-												android block: <br><br>
-												<br>
-												def keystoreProperties = new Properties()<br>
-												def keystorePropertiesFile = rootProject.file('key.properties')<br>
-												if (keystorePropertiesFile.exists()) {<br>
-												keystoreProperties.load(new FileInputStream(keystorePropertiesFile))<br>
-												}<br><br>
-
-
-												<img src="images/codeBlock1.webp" alt="eGrocer" /><br><br>
-											</li>
-											<li>
-												Find the buildTypes block:<br>
-												And replace it with the following signing configuration info:
-												<br><br>
-												signingConfigs { <br>
-												release {<br>
-												keyAlias keystoreProperties['keyAlias']<br>
-												keyPassword keystoreProperties['keyPassword']<br>
-												storeFile keystoreProperties['storeFile'] ?
-												file(keystoreProperties['storeFile']) : null<br>
-												storePassword keystoreProperties['storePassword']<br>
-												}<br>
-												}<br>
-												buildTypes {<br>
-												release {<br>
-												signingConfig signingConfigs.release<br>
-												}<br>
-												}<br> <br>
-
-												<img src="images/codeBlock2.webp" alt="eGrocer" /><br><br>
-
-											</li>
-										</ul>
-										<br>
-									</li>
-									<li>
-										Run following commands in Terminal as per your need: <br>
-										<ul>
-											<li>
-
-												To generate an APK <br>
-												flutter build apk
-											</li>
-											<li>
-
-												To generate an App Bundle <br>
-												flutter build appbundle
-											</li>
-											<br>
-											<img src="images/generateAPK.webp" alt="eGrocer" /><br><br>
-										</ul>
-									</li>
-
-								</ol>
-								</ol>
-
-								<hr>
-							</div>
-						</section>
-
-
-
-
-						<section id="apk-iOS">
-							<div class="container">
-								<h2>Steps to Publish iOS App to App Store</h2>
-								<ol>
-									<li>Open your Project's Runner.xcworkspace file in Xcode, and Add your Team [Your
-										Apple Developer ID] and also Insert GoogleService-Info.plist file [Downloaded
-										From Firebase Project] inside folder named Runner.</li>
-
-									<br>
-									<img src="images/ios1.webp" alt="eGrocer" /><br><br>
-
-									<li>and then Select <b>Any iOS Device (armv7,arm64)</b> as shown in image below.
-									</li>
-									<br>
-									<img src="images/ios2.webp" alt="eGrocer" /><br><br>
-
-									<li>After that Select <b>Archive</b> From Product Menu of Xcode as shown below.
-									</li>
-
-									<br>
-									<img src="images/ios3.webp" alt="eGrocer" /><br><br>
-
-									<li>Once Build / Archive Generated, pop up window will be shown. Validate app First,
-										and After Successfull Validation of App, You Can Distribute App to AppStore.
-									</li>
-
-									<img src="images/ios4.webp" alt="eGrocer" /><br><br>
-
-
-									<li>After SuccessFull Submission of Build File, it will be Reflected to your Apple
-										Developer Account in which we have created app with same Bundle ID.</li>
-									<a href="https://codewithchris.com/submit-your-app-to-the-app-store/"
-										style="color:red">Click here for Detailed Help</a>
-
-								</ol>
-
-								<p> </p>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
-
-
-
-
-
-						<section id="support">
-							<div class="container"> <br>
-								<h2>Need Support?</h2>
-								<p>Its our pleasure to serve our service and support. please contact our support team.
-								</p>
-								<p>Head of Customer Support : Vimal Gondariya<br> Skype: <a
-										href="https://join.skype.com/invite/BZ8brCpb7far" target="_blank"
-										style='color:#3c55d1'> Vimal Gondariya</a><br>
-
-
-								</p>
-
-								<p>To help our customers, we constantly be in touch with every customer if they need any
-									assistance
-									regarding our product.
-									We offer our customers a support from <strong> Mon - Fri 9.00am to 6.00pm IST (GMT
-										+5.30) - We are a
-										Team located in India - Asia.</strong></p>
-
-								<p>Typically we reply our customers for all the questions and queries within 24 hours of
-									time via
-									comments, support forum or emails.</p>
-
-
-								</ul>
-							</div>
-						</section>
-						<section id="rating">
-							<div class="container"> <br>
-								<h2>Your Feedback </h2>
-								<p>Dear valuable customer,
-									Thank you very much for choosing our product.
-									It's our pleasure to serve top-notch service to you.
-									Please give us your honest feedback that will help us to make a more strong and
-									reliable product by
-									click here <a href="https://codecanyon.net/downloads" style='color:#3c55d1'
-										target="_blank">Rate
-										Us</a>.
-									Thank you very much.</p>
-
-
-								</ul>
-							</div>
-						</section>
-						<section id="contactus">
-							<div class="container"> <br>
-								<h2>Contact Us</h2>
-								<p>WRTeam has creative and dedicated group of developers who are mastered in Apps
-									Developments and Web
-									Application Development with a niche in delivering quality solutions to customers
-									across the globe.
-									Contact us today to find out how we can help you or for freelance work.
-								<p>Visit Us : <a href="https://wrteam.in/" target="_blank"><span
-											style="color:#0e8bcb;">https://wrteam.in</span>
-									</a>
-
-								<p></p>Skype: <a href="https://join.skype.com/invite/BZ8brCpb7far" target="_blank"
-									style='color:#3c55d1'> Vimal
-									Gondariya</a></p>
-
-
-								</p>
-								<p>Mail Us : support@wrteam.in</p>
-
-								</p>
-								<p>Thank you very much.</p>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
-
-
-
-						<section id="rating">
-							<div class="container"> <br>
-								<h2>Rating </h2>
-								<p>If you truly value the hard work and support our team provides, we kindly request
-									that you spare
-									a moment to share your
-									positive feedback with us on Codecanyon. You can do so by visiting
-									<a href="https://codecanyon.net/downloads">Rate Us</a>. Your feedback is
-									greatly appreciated and helps us continue to improve our services. Thank you for
-									your support!
-								</p>
-								<div class="section_bdr"></div>
-								</ul>
-							</div>
-						</section>
-
-
-
-					</div>
-
-					<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
 								<li>
-									<h3><span style="color:#0e8bcb;font-style:italic">WRTeam</span>
+									Create an upload keystore<br>
+									Running the following at the command line:<br>
+									<ul>
+										<li>
+											On Mac/Linux, use the following command: <br><br>
+											keytool -genkey -v -keystore ~/upload-keystore.jks -keyalg RSA -keysize
+											2048 -validity 10000 -alias upload
+											<br><br>
+										</li>
+										<li>
+											On Windows, use the following command:<br><br>
+											keytool -genkey -v -keystore c:\Users\USER_NAME\upload-keystore.jks
+											-storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+											<br><br>
+										</li>
+
+									</ul>
+									<img src="images/modifyPath.webp" alt="eGrocer" /><br><br>
+									<img src="images/remeberPassword.webp" alt="eGrocer" /><br><br>
+									<img src="images/success.webp" alt="eGrocer" /><br><br>
+
 								</li>
-								<!--<li><a href="http://www.viaviweb.in" target="_blank"><span style="color:#9f9f9f;font-style:italic">Viavi Webtech</span></a></li>-->
+
+								<li>
+									Reference the keystore from the app<br><br>
+									Create a file named [project]/android/key.properties that contains a reference
+									to your keystore:<br>
+									<br>
+
+
+
+									<img src="images/createfile.webp" alt="eGrocer" /><br><br>
+
+									Copy below code, Paste in to key.propertirs file and change as per shown in
+									image.<br><br>
+
+									storePassword=<password from previous step> <br>
+										keyPassword=<password from previous step> <br>
+											keyAlias=upload <br>
+											storeFile=location of the key store file, such as /Users/user
+											name/upload-keystore.jks<br><br>
+											<img src="images/setPath.webp" alt="eGrocer" /><br><br>
+
+
+								</li>
+
+								<li>
+									Configure signing in gradle <br><br>
+									Configure gradle to use your upload key when building your app in release mode
+									by editing the [project]/android/app/build.gradle file.<br>
+
+									<ul>
+										<li>
+											Add the below keystore information from your properties file before the
+											android block: <br><br>
+											<br>
+											def keystoreProperties = new Properties()<br>
+											def keystorePropertiesFile = rootProject.file('key.properties')<br>
+											if (keystorePropertiesFile.exists()) {<br>
+											keystoreProperties.load(new FileInputStream(keystorePropertiesFile))<br>
+											}<br><br>
+
+
+											<img src="images/codeBlock1.webp" alt="eGrocer" /><br><br>
+										</li>
+										<li>
+											Find the buildTypes block:<br>
+											And replace it with the following signing configuration info:
+											<br><br>
+											signingConfigs { <br>
+											release {<br>
+											keyAlias keystoreProperties['keyAlias']<br>
+											keyPassword keystoreProperties['keyPassword']<br>
+											storeFile keystoreProperties['storeFile'] ?
+											file(keystoreProperties['storeFile']) : null<br>
+											storePassword keystoreProperties['storePassword']<br>
+											}<br>
+											}<br>
+											buildTypes {<br>
+											release {<br>
+											signingConfig signingConfigs.release<br>
+											}<br>
+											}<br> <br>
+
+											<img src="images/codeBlock2.webp" alt="eGrocer" /><br><br>
+
+										</li>
+									</ul>
+									<br>
+								</li>
+								<li>
+									Run following commands in Terminal as per your need: <br>
+									<ul>
+										<li>
+
+											To generate an APK <br>
+											flutter build apk
+										</li>
+										<li>
+
+											To generate an App Bundle <br>
+											flutter build appbundle
+										</li>
+										<br>
+										<img src="images/generateAPK.webp" alt="eGrocer" /><br><br>
+									</ul>
+								</li>
+
+							</ol>
+							</ol>
+
+							<hr>
+						</div>
+					</section>
+
+
+
+
+					<section id="apk-iOS">
+						<div class="container">
+							<h2>Steps to Publish iOS App to App Store</h2>
+							<ol>
+								<li>Open your Project's Runner.xcworkspace file in Xcode, and Add your Team [Your
+									Apple Developer ID] and also Insert GoogleService-Info.plist file [Downloaded
+									From Firebase Project] inside folder named Runner.</li>
+
+								<br>
+								<img src="images/ios1.webp" alt="eGrocer" /><br><br>
+
+								<li>and then Select <b>Any iOS Device (armv7,arm64)</b> as shown in image below.
+								</li>
+								<br>
+								<img src="images/ios2.webp" alt="eGrocer" /><br><br>
+
+								<li>After that Select <b>Archive</b> From Product Menu of Xcode as shown below.
+								</li>
+
+								<br>
+								<img src="images/ios3.webp" alt="eGrocer" /><br><br>
+
+								<li>Once Build / Archive Generated, pop up window will be shown. Validate app First,
+									and After Successfull Validation of App, You Can Distribute App to AppStore.
+								</li>
+
+								<img src="images/ios4.webp" alt="eGrocer" /><br><br>
+
+
+								<li>After SuccessFull Submission of Build File, it will be Reflected to your Apple
+									Developer Account in which we have created app with same Bundle ID.</li>
+								<a href="https://codewithchris.com/submit-your-app-to-the-app-store/"
+									style="color:red">Click here for Detailed Help</a>
+
+							</ol>
+
+							<p> </p>
+							<div class="section_bdr"></div>
 							</ul>
 						</div>
 					</section>
-			</div>
-			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-			<script type="text/javascript">
-				$(document).ready(function () {
-					$(window).scroll(function () {
-						if ($(this).scrollTop() > 100) {
-							$('.scrollup').fadeIn();
-						} else {
-							$('.scrollup').fadeOut();
-						}
-					});
-					$('.scrollup').click(function () {
-						$("html, body").animate({ scrollTop: 0 }, 600);
-						return false;
-					});
-				});
-			</script>
-			<div><a href="#" class="scrollup">Scroll</a></div>
-	</body>
 
-	</html>
+
+
+
+
+					<section id="support">
+						<div class="container"> <br>
+							<h2>Need Support?</h2>
+							<p>Its our pleasure to serve our service and support. please contact our support team.
+							</p>
+							<p>Head of Customer Support : Vimal Gondariya<br> Skype: <a
+									href="https://join.skype.com/invite/BZ8brCpb7far" target="_blank"
+									style='color:#3c55d1'> Vimal Gondariya</a><br>
+
+
+							</p>
+
+							<p>To help our customers, we constantly be in touch with every customer if they need any
+								assistance
+								regarding our product.
+								We offer our customers a support from <strong> Mon - Fri 9.00am to 6.00pm IST (GMT
+									+5.30) - We are a
+									Team located in India - Asia.</strong></p>
+
+							<p>Typically we reply our customers for all the questions and queries within 24 hours of
+								time via
+								comments, support forum or emails.</p>
+
+
+							</ul>
+						</div>
+					</section>
+					<section id="rating">
+						<div class="container"> <br>
+							<h2>Your Feedback </h2>
+							<p>Dear valuable customer,
+								Thank you very much for choosing our product.
+								It's our pleasure to serve top-notch service to you.
+								Please give us your honest feedback that will help us to make a more strong and
+								reliable product by
+								click here <a href="https://codecanyon.net/downloads" style='color:#3c55d1'
+									target="_blank">Rate
+									Us</a>.
+								Thank you very much.</p>
+
+
+							</ul>
+						</div>
+					</section>
+					<section id="contactus">
+						<div class="container"> <br>
+							<h2>Contact Us</h2>
+							<p>WRTeam has creative and dedicated group of developers who are mastered in Apps
+								Developments and Web
+								Application Development with a niche in delivering quality solutions to customers
+								across the globe.
+								Contact us today to find out how we can help you or for freelance work.
+							<p>Visit Us : <a href="https://wrteam.in/" target="_blank"><span
+										style="color:#0e8bcb;">https://wrteam.in</span>
+								</a>
+
+							<p></p>Skype: <a href="https://join.skype.com/invite/BZ8brCpb7far" target="_blank"
+								style='color:#3c55d1'> Vimal
+								Gondariya</a></p>
+
+
+							</p>
+							<p>Mail Us : support@wrteam.in</p>
+
+							</p>
+							<p>Thank you very much.</p>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
+
+
+
+					<section id="rating">
+						<div class="container"> <br>
+							<h2>Rating </h2>
+							<p>If you truly value the hard work and support our team provides, we kindly request
+								that you spare
+								a moment to share your
+								positive feedback with us on Codecanyon. You can do so by visiting
+								<a href="https://codecanyon.net/downloads">Rate Us</a>. Your feedback is
+								greatly appreciated and helps us continue to improve our services. Thank you for
+								your support!
+							</p>
+							<div class="section_bdr"></div>
+							</ul>
+						</div>
+					</section>
+
+
+
+				</div>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<ul class="copyright">
+							<li>
+								<h3><span style="color:#0e8bcb;font-style:italic">WRTeam</span>
+							</li>
+							<!--<li><a href="http://www.viaviweb.in" target="_blank"><span style="color:#9f9f9f;font-style:italic">Viavi Webtech</span></a></li>-->
+						</ul>
+					</div>
+				</section>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.scrollup').click(function () {
+					$("html").animate({ scrollTop: 0 }, 1000);
+					return false;
+				});
+			});
+
+			function toggleNav() {
+				var sidebar = document.getElementById("sidebar");
+				sidebar.style.transition = "width 0.5s ease-in-out";
+				if (sidebar.style.width == "0px" || sidebar.style.width == "") {
+					sidebar.style.width = "20em";
+				} else {
+					sidebar.style.width = "0px";
+				}
+			}
+		</script>
+		<div><a href="#" class="scrollup">Scroll</a></div>
+
+		<!-- TOGGLE SIDEBAR -->
+		<div><a href="#" onclick="toggleNav(); return false;" class="toggle">Toggle</a></div>
+</body>
+
+</html>
 </em>

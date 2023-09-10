@@ -21,7 +21,6 @@
 		content="https://codecanyon.net/item/egrocer-online-grocery-store-ecommerce-marketplace-flutter-full-app-with-admin-panel/41423150/">
 	<meta property="og:type" content="website">
 
-
 	<title>eGrocer - Online Multi Vendor Grocery Store, eCommerce Marketplace Flutter Full App with Admin Panel</title>
 	<link rel="shortcut icon" href="../images/app_icon.webp" type="image/x-icon">
 	<meta charset="utf-8" />
@@ -49,7 +48,7 @@
 </head>
 
 <body>
-	<section id="header">
+	<section id="sidebar" style="width: 20em;">
 		<header> <span class="image avatar"><img src="../images/app_icon.webp"
 					alt="eGrocer - Online Multi Vendor Grocery Store, eCommerce Marketplace Flutter Full App with Admin Panel" /></span>
 			<h4 id="logo"><a href="#">eGrocer Customer App</a></h4>
@@ -1575,8 +1574,21 @@
 					return false;
 				});
 			});
+
+			function toggleNav() {
+				var sidebar = document.getElementById("sidebar");
+				sidebar.style.transition = "width 0.5s ease-in-out";
+				if (sidebar.style.width == "0px" || sidebar.style.width == "") {
+					sidebar.style.width = "20em";
+				} else {
+					sidebar.style.width = "0px";
+				}
+			}
 		</script>
 		<div><a href="#" class="scrollup">Scroll</a></div>
+
+		<!-- TOGGLE SIDEBAR -->
+		<div><a href="#" onclick="toggleNav(); return false;" class="toggle">Toggle</a></div>
 	</div>
 </body>
 

@@ -30,7 +30,7 @@
 </head>
 
 <body>
-	<section id="header">
+	<section id="sidebar" style="width: 20em;">
 		<header> <span class="image avatar"><img src="../images/app_icon.webp"
 					alt="eGrocer - Online Multi Vendor Grocery Store, eCommerce Marketplace Flutter Full App with Admin Panel" /></span>
 			<h4 id="logo"><a href="#">eGrocer Website</a></h4>
@@ -438,30 +438,28 @@
 				</ul>
 			</div>
 		</section>
-	</div>
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollzer.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$(window).scroll(function () {
-				if ($(this).scrollTop() > 100) {
-					$('.scrollup').fadeIn();
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.scrollup').click(function () {
+					$("html").animate({ scrollTop: 0 }, 1000);
+					return false;
+				});
+			});
+
+			function toggleNav() {
+				var sidebar = document.getElementById("sidebar");
+				sidebar.style.transition = "width 0.5s ease-in-out";
+				if (sidebar.style.width == "0px" || sidebar.style.width == "") {
+					sidebar.style.width = "20em";
 				} else {
-					$('.scrollup').fadeOut();
+					sidebar.style.width = "0px";
 				}
-			});
-			$('.scrollup').click(function () {
-				$("html, body").animate({ scrollTop: 0 }, 600);
-				return false;
-			});
-		});
-	</script>
-	<div><a href="#" class="scrollup">Scroll</a></div>
+			}
+		</script>
+		<div><a href="#" class="scrollup">Scroll</a></div>
+
+		<!-- TOGGLE SIDEBAR -->
+		<div><a href="#" onclick="toggleNav(); return false;" class="toggle">Toggle</a></div>
 	</div>
 </body>
 

@@ -26,6 +26,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="../main.css" />
+  <script type="text/javascript" src="../main.js"></script>
   <style>
     pre code {
       background-color: #eee;
@@ -38,7 +39,7 @@
 </head>
 
 <body>
-  <section id="header">
+  <section id="sidebar" style="width: 20em;">
     <header> <span class="image avatar"><img src="../images/app_icon.webp"
           alt="eGrocer - Online Multi Vendor Grocery Store, eCommerce Marketplace Flutter Full App with Admin Panel" /></span>
       <h4 id="logo"><a href="#">eGrocer Admin Panel</a></h4>
@@ -382,30 +383,28 @@
           </div>
         </section>
     </div>
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollzer.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-    <script src="assets/js/main.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {
-            $('.scrollup').fadeIn();
-          } else {
-            $('.scrollup').fadeOut();
-          }
-        });
         $('.scrollup').click(function () {
-          $("html, body").animate({ scrollTop: 0 }, 600);
+          $("html").animate({ scrollTop: 0 }, 1000);
           return false;
         });
       });
+
+      function toggleNav() {
+        var sidebar = document.getElementById("sidebar");
+        sidebar.style.transition = "width 0.5s ease-in-out";
+        if (sidebar.style.width == "0px" || sidebar.style.width == "") {
+          sidebar.style.width = "20em";
+        } else {
+          sidebar.style.width = "0px";
+        }
+      }
     </script>
     <div><a href="#" class="scrollup">Scroll</a></div>
+
+    <!-- TOGGLE SIDEBAR -->
+    <div><a href="#" onclick="toggleNav(); return false;" class="toggle">Toggle</a></div>
   </div>
 </body>
 

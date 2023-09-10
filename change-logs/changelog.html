@@ -456,6 +456,15 @@
             changeList.appendChild(versionItem);
         });
     </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.scrollup').click(function () {
+                $("html").animate({ scrollTop: 0 }, 1000);
+                return false;
+            });
+        });
+    </script>
+    <div><a href="#" class="scrollup">Scroll</a></div>
 </body>
 
 </html>

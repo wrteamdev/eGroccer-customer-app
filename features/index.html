@@ -261,7 +261,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.scrollup').click(function () {
+        $("html").animate({ scrollTop: 0 }, 1000);
+        return false;
+      });
+    });
+  </script>
+  <div><a href="#" class="scrollup">Scroll</a></div>
 </body>
 
 </html>

@@ -71,3 +71,20 @@
   max-height: 1000px;
   /* Adjust to a value that suits your content */
 }
+
+.scrollup {
+  background: url("../../images/top-move.webp") no-repeat scroll 0 0;
+  bottom: 35px;
+  display: block;
+  height: 60px;
+  opacity: 0.9;
+  outline: medium none !important;
+  position: fixed;
+  right: 10px;
+  text-indent: -9999px;
+  width: 60px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
