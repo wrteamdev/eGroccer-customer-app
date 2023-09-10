@@ -2844,21 +2844,6 @@ input[type="button"]:disabled,
 	border-top: 0;
 }
 
-
-
-/* One */
-
-#one:before {
-	/*background-image: url("../../images/banner.webp");
-	background-position: top left;
-	background-repeat: no-repeat;
-	background-size: cover;
-	content: '';
-	display: block;
-	height: 250px;
-	width: 100%;*/
-}
-
 /* Footer */
 
 #footer {
@@ -2886,7 +2871,6 @@ input[type="button"]:disabled,
 	margin: 0px 0;
 	padding-left: 0;
 	width: 100%;
-	float: left;
 }
 
 #footer .copyright li:first-child {
