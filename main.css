@@ -2890,7 +2890,7 @@ input[type="button"]:disabled,
 }
 
 .scrollup {
-	background: url("../../images/top-move.webp") no-repeat scroll 0 0;
+	background: url("images/top-move.webp") no-repeat scroll 0 0;
 	bottom: 35px;
 	display: block;
 	height: 60px;
@@ -3276,7 +3276,7 @@ html {
 
 /* Collapse-Expande */
 .toggle {
-	background: url("../../images/toggle.webp") no-repeat scroll 0 0;
+	background: url("images/toggle.webp") no-repeat scroll 0 0;
 	top: 35px;
 	padding: 5px;
 	display: block;
