@@ -2204,12 +2204,6 @@ input[type="radio"]+label:before {
 
 /* Image */
 
-img.youtube {
-	height: 35px !important;
-	width: fit-content !important;
-	margin: 10px !important;
-}
-
 .image {
 	border-radius: 5px;
 	border: 0;
@@ -2901,6 +2895,14 @@ input[type="button"]:disabled,
 	text-indent: -9999px;
 	width: 60px;
 }
+
+.youtube-image {
+	background: url(images/youtube.svg) no-repeat scroll 0 0;
+	height: 40px;
+	width: 45px;
+	margin: 5px;
+}
+
 
 /* XLarge */
 
