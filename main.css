@@ -177,9 +177,7 @@ body {
 	width: 11.25em;
 }
 
-.container {
-	width: 45em;
-}
+
 
 @media screen and (max-width: 1680px) {
 	.container.\31 25\25 {
@@ -2918,7 +2916,7 @@ input[type="button"]:disabled,
 		/* Main */
 
 		#main>section>.container {
-			padding: 4em 0 2em 0;
+			padding: 2em 0 2em 0;
 		}
 	}
 
@@ -3289,4 +3287,25 @@ html {
 	right: 10px;
 	text-indent: -9999px;
 	width: 42px;
+}
+
+img{
+	border:1px solid #5bae7c;
+	border-radius:5px;
+}
+img.youtube{
+	border:none;
+}
+section{
+	margin-bottom:10px;
+}
+#main>section>.container {
+    padding: 1em 0 4em 0;
+}
+.container {
+	width: 95%;
+}
+#wrapper a{
+	color:#5bae7c !important;
+	text-decoration: underline;
 }
