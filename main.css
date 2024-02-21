@@ -3289,23 +3289,37 @@ html {
 	width: 42px;
 }
 
-img{
-	border:1px solid #5bae7c;
-	border-radius:5px;
+img {
+	border: 2px solid #5bae7c;
+	border-radius: 10px;
 }
-img.youtube{
-	border:none;
+
+img.youtube {
+	border: none;
 }
-section{
-	margin-bottom:10px;
+
+section {
+	margin-bottom: 10px;
 }
+
 #main>section>.container {
-    padding: 1em 0 4em 0;
+	padding: 1em 0 4em 0;
 }
+
 .container {
 	width: 95%;
 }
-#wrapper a{
-	color:#5bae7c !important;
+
+#wrapper a {
+	color: #5bae7c !important;
 	text-decoration: underline;
+}
+
+iframe {
+	width: 81%;
+	height: 64vh;
+	border: 2px #25b176 solid;
+	border-radius: 10px;
+	margin: auto;
+	display: block;
 }
