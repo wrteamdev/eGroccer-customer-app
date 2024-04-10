@@ -38,7 +38,7 @@
 		<nav id="nav">
 			<ul>
 				<li><a href="#setup_react_js">Setup React JS</a></li>
-				<li><a href="#change_admin_panel_url">Change admin panel url</a></li>
+				<li><a href="#setup_env_variables">Setup environment variables in .env file</a></li>
 				<li><a href="#changeWebsiteThemeColor">Change website theme color</a></li>
 				<li><a href="#firebase_app">How to set up firebase config for website?</a></li>
 				<li><a href="#run_website">Open and Run eGrocer Website</a></li>
@@ -164,15 +164,12 @@
 						</div>
 					</section>
 
-					<section id="change_admin_panel_url">
+					<section id="setup_env_variables">
 						<div class="container"> <br>
-							<h2>How to change admin panel url?</h2>
+							<h2>How to setup environment variables?</h2>
 							<ol>
-								<li>Open <strong style="color: red;">.env</strong> change only <strong
-										style="color: red;">YOUR ADMIN PANEL URL (REMOVE SLASH FROM LAST)</strong> value
-									and make sure last
-									slack should not be
-									add. (Prefer screenshot)</li>
+								<li>Open <strong style="color: red;">.env</strong> and fill all values
+									and make sure last slash should not be added in the admin panel url. (Prefer screenshot)</li>
 								<br>
 								<img src="images/change-admin-panel-url.webp" alt="eGrocer" />
 							</ol>
@@ -233,7 +230,7 @@
 								<br>
 
 								<li>
-									Copy firebaseConfig oobject and click on continue to console.
+									Copy firebaseConfig object and click on continue to console.
 									<br>
 								</li>
 								<img src="images/react-firebase-step6.webp" alt="eGrocer">
@@ -314,7 +311,7 @@
 												Create zip file of the build folder from the website code
 											</li>
 											<li>
-												Upload it on website root folder and extract thair content in the root
+												Upload it on website root folder and extract its content in the root
 												folder
 											</li>
 										</ul>
@@ -334,7 +331,7 @@
 											</li>
 
 											<li>
-												After setup ftp properly, run this code to deploy website on server
+												After setup ftp properly and generating the build folder, run this code to deploy website on server
 												<code>npm run deploy</code>
 												<br>
 												<img src="images/react-terminal-npm-run-deploy.webp"
