@@ -49,7 +49,7 @@
 				<li><a href="#packagename">How to change Packagename</a></li>
 				<li><a href="#assetimage">How to Change Images in asset</a></li>
 				<li><a href="#addlanguage">Manage Languages</a></li>
-				<li><a href="#appfont">How to change app font</a></li>
+				<li><a href="#appfont">Change Font Family</a></li>
 				<li><a href="#serverurl">How to Change Server URL</a></li>
 
 
@@ -546,14 +546,12 @@
 					</section>
 					<section id="appfont">
 						<div class="container"> <br>
-							<h2>How to change app font?</h2>
+							<h2>How to change font family?</h2>
 							<ol>
-
-								<li>Go to assets > fonts folder .here you have to copy your font.now go to
-									pubspec.yaml in font section change your font name
-									as shown in below image.</li><br>
-
-								<img src="images/font.webp" alt="eGrocer" />
+								<li>You need to select font from the google fonts only. (Visit <a
+										href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a>)
+								</li><br>
+								<img src="images/google-font.webp" alt="eGrocer" />
 								<br><br>
 
 
@@ -1132,63 +1130,18 @@
 
 
 								</li>
-
-								<li>
-									Configure signing in gradle <br><br>
-									Configure gradle to use your upload key when building your app in release mode
-									by editing the [project]/android/app/build.gradle file.<br>
-
-									<ul>
-										<li>
-											Add the below keystore information from your properties file before the
-											android block: <br><br>
-											<br>
-											def keystoreProperties = new Properties()<br>
-											def keystorePropertiesFile = rootProject.file('key.properties')<br>
-											if (keystorePropertiesFile.exists()) {<br>
-											keystoreProperties.load(new FileInputStream(keystorePropertiesFile))<br>
-											}<br><br>
-
-
-											<img src="images/codeBlock1.webp" alt="eGrocer" /><br><br>
-										</li>
-										<li>
-											Find the buildTypes block:<br>
-											And replace it with the following signing configuration info:
-											<br><br>
-											signingConfigs { <br>
-											release {<br>
-											keyAlias keystoreProperties['keyAlias']<br>
-											keyPassword keystoreProperties['keyPassword']<br>
-											storeFile keystoreProperties['storeFile'] ?
-											file(keystoreProperties['storeFile']) : null<br>
-											storePassword keystoreProperties['storePassword']<br>
-											}<br>
-											}<br>
-											buildTypes {<br>
-											release {<br>
-											signingConfig signingConfigs.release<br>
-											}<br>
-											}<br> <br>
-
-											<img src="images/codeBlock2.webp" alt="eGrocer" /><br><br>
-
-										</li>
-									</ul>
-									<br>
-								</li>
 								<li>
 									Run following commands in Terminal as per your need: <br>
 									<ul>
 										<li>
 
 											To generate an APK <br>
-											flutter build apk
+											<code>flutter build apk</code>
 										</li>
 										<li>
 
 											To generate an App Bundle <br>
-											flutter build appbundle
+											<code>flutter build appbundle</code>
 										</li>
 										<br>
 										<img src="images/generateAPK.webp" alt="eGrocer" /><br><br>
