@@ -70,6 +70,7 @@
 				<li><a href="#appfont">Change Font Family</a></li>
 				<li><a href="#serverurl">Server Url Setup</a></li>
 				<li><a href='#otp'>Change Default Country Code For OTP</a></li>
+				<li><a href='#deep_link_setup'>Deeplink setup</a></li>
 				<li><a href='#create_firebase_app'>Create Flutter Firebase App</a></li>
 				<li><a href='#firebase_otp'>Enable Firebase Phone Authentication</a></li>
 				<li><a href="#firebase-admin-panel-setting">Firebase Setup For Admin Panel</a></li>
@@ -591,6 +592,48 @@
 									to change country code to your language code.
 								</li><br>
 								<img src="images/otp.webp"><br><br>
+
+							</ol>
+						</div>
+					</section>
+
+					<section id="deep_link_setup">
+						<div class="container"> <br><br>
+							<div style="display: flex; flex-direction: row;">
+								<h2>How to setup deep link?</h2>
+							</div>
+
+
+							<ol><br>
+								<li>First of all download this google files from the link : <a
+										href="https://drive.google.com/drive/folders/1LbSXPmTRvz6-VWdr4isJz9AE00p8ynJ6"
+										target="_blank">Server
+										Side Deeplink Files</a>
+								</li>
+								<li>Open both files in the any text editor and follow below steps</li>
+								<li></li><img src="images/deep-link-1.webp">
+								<li></li><img src="images/deep-link-2.webp">
+								<li>After above changes save both files (Note- Keep name proper same of both files)</li>
+								<li>Open server > Go to admin panel root folder</li>
+								<li>You will get .well-known folder on root directory</li>
+								<li>If you dont get that folder from setting enable setting visible hidden files then
+									check</li>
+								<li>After the change setting still you don't find the files, Create new directory named
+									<a style="font-weight: bolder;">.well-known</a> (Makesure name starts with dot[.])
+								</li>
+								<li>Add both above saved files inside the <a
+										style="font-weight: bolder;">.well-known</a>
+									folder.
+								</li>
+								<li>In server > admin panel root folder you will get <a
+										style="font-weight: bolder;">.htaccess</a> file, Open it and do changes as per
+									below image.</li>
+								<li></li><img src="images/deep-link-3.webp">
+								<li>For further steps open customer app code in android studio and follow below steps.
+								</li>
+								<li></li><img src="images/deep-link-4.webp">
+								<li></li><img src="images/deep-link-5.webp">
+								<br><br>
 
 							</ol>
 						</div>
