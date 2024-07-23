@@ -283,6 +283,106 @@
   color: #9b59b6;
 }
 
+/* Color Combination 17 */
+.serviceBox.color17 .service-icon span {
+  background: #003366;
+  /* Dark Blue */
+}
+
+.serviceBox.color17:hover .title {
+  color: #003366;
+}
+
+/* Color Combination 18 */
+.serviceBox.color18 .service-icon span {
+  background: #004d40;
+  /* Dark Teal */
+}
+
+.serviceBox.color18:hover .title {
+  color: #004d40;
+}
+
+/* Color Combination 19 */
+.serviceBox.color19 .service-icon span {
+  background: #6a1b9a;
+  /* Dark Purple */
+}
+
+.serviceBox.color19:hover .title {
+  color: #6a1b9a;
+}
+
+/* Color Combination 20 */
+.serviceBox.color20 .service-icon span {
+  background: #c2185b;
+  /* Dark Pink */
+}
+
+.serviceBox.color20:hover .title {
+  color: #c2185b;
+}
+
+/* Color Combination 21 */
+.serviceBox.color21 .service-icon span {
+  background: #004d40;
+  /* Dark Green */
+}
+
+.serviceBox.color21:hover .title {
+  color: #004d40;
+}
+
+/* Color Combination 22 */
+.serviceBox.color22 .service-icon span {
+  background: #1976d2;
+  /* Dark Blue */
+}
+
+.serviceBox.color22:hover .title {
+  color: #1976d2;
+}
+
+/* Color Combination 23 */
+.serviceBox.color23 .service-icon span {
+  background: #0288d1;
+  /* Deep Sky Blue */
+}
+
+.serviceBox.color23:hover .title {
+  color: #0288d1;
+}
+
+/* Color Combination 24 */
+.serviceBox.color24 .service-icon span {
+  background: #d32f2f;
+  /* Dark Red */
+}
+
+.serviceBox.color24:hover .title {
+  color: #d32f2f;
+}
+
+/* Color Combination 25 */
+.serviceBox.color25 .service-icon span {
+  background: #7b1fa2;
+  /* Dark Violet */
+}
+
+.serviceBox.color25:hover .title {
+  color: #7b1fa2;
+}
+
+/* Color Combination 26 */
+.serviceBox.color26 .service-icon span {
+  background: #0097a7;
+  /* Deep Cyan */
+}
+
+.serviceBox.color26:hover .title {
+  color: #0097a7;
+}
+
 .scrollup {
   background: url("../../images/top-move.webp") no-repeat scroll 0 0;
   bottom: 35px;
