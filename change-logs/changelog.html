@@ -2,20 +2,95 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Discover eGrocer, your go-to resource for efficient online grocery store management. Explore our comprehensive guides on inventory management, order processing, customer engagement, and more. Start optimizing your eGrocer experience today.">
+        <meta name="keywords"
+            content="eGrocer, online grocery store, grocery management, eCommerce, marketplace, Flutter app, admin panel, inventory management, order processing, customer engagement, grocery documentation">
+        <meta name="author" content="eGrocer">
+        <meta name="robots" content="index, follow"> <!-- Instruct search engines to index and follow the page -->
+
+        <!-- Open Graph meta tags for social media sharing -->
+        <meta property="og:title"
+            content="eGrocer - Online Multi Vendor Grocery Store, eCommerce Marketplace Flutter Full App with Admin Panel">
+        <meta property="og:description"
+            content="Discover eGrocer, your go-to resource for efficient online grocery store management. Explore our comprehensive guides on inventory management, order processing, customer engagement, and more. Start optimizing your eGrocer experience today.">
+        <meta property="og:image" content="../images/app_icon.webp">
+        <meta property="og:url"
+            content="https://codecanyon.net/item/egrocer-online-grocery-store-ecommerce-marketplace-flutter-full-app-with-admin-panel/41423150/">
+        <meta property="og:type" content="website">
+
+
+        <title>eGrocer - Documentation
+        </title>
+        <link rel="shortcut icon" href="../images/app_icon.webp" type="image/x-icon">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css">
+    </head>
 
 <body>
-    <h1>Change Log
-    </h1>
-    <ul class="change-list" id="change-list">
-    </ul>
+    <button id="menu-toggle">
+        <div class="menu-toggle-icon top"></div>
+        <div class="menu-toggle-icon middle"></div>
+        <div class="menu-toggle-icon bottom"></div>
+    </button>
+    <div id="sidebar"></div>
+    <div id="content">
+        <h1>Changelog</h1>
+        <ul class="change-list" id="change-list"></ul>
+    </div>
 
     <script>
         const jsonData = [
+            {
+                "version": "Version 2.0.3 - 22 Aug 2024",
+                "changes": [
+                    {
+                        "type": "Added",
+                        "description": "Order popup while new order receive (Admin panel, seller panel)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Cashfree payment option (Checkout, wallet recharge)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Polymap for map system in admin panel for cities (Zone) section (Admin panel)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Admin can assign multiple cities to seller for the products delivery (Admin panel)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Customer will receive mail while return/cancel order (Customer app, website)"
+                    },
+                    {
+                        "type": "Added",
+                        "description": "Cart reminder notification for already added cart item to place order (Admin panel)"
+                    },
+                    {
+                        "type": "Improved",
+                        "description": "Major change - Commission flow and module improved (Admin panel)"
+                    },
+                    {
+                        "type": "Redesign",
+                        "description": "Major change - Login, checkout, intro slider screen redesigned (Customer app)"
+                    },
+                    {
+                        "type": "Compatible",
+                        "description": "Flutter 3.24.0 - Seamlessly utilize the latest Flutter features (Customer app, partner app)"
+                    },
+                    {
+                        "type": "Fixed",
+                        "description": "Other improvements and fixes"
+                    },
+                ]
+            },
             {
                 "version": "Version 2.0.2 - 23 July 2024",
                 "changes": [
@@ -461,7 +536,7 @@
                         "description": "Admin panel product detail page variant image preview issue"
                     },
                     {
-                        "type": "Re-Design",
+                        "type": "Redesign",
                         "description": "Order tracker (Customer App)"
                     },
                     {
@@ -525,7 +600,7 @@
                         "description": "Show full-page dialog for internet/API issues instead of toast messages (App)"
                     },
                     {
-                        "type": "Re-Design",
+                        "type": "Redesign",
                         "description": "Order tracker(Customer App)"
                     },
                     {
@@ -799,82 +874,56 @@
         ];
 
         const changeList = document.getElementById("change-list");
+        const sidebar = document.getElementById("sidebar");
+        const menuToggle = document.getElementById("menu-toggle");
 
-        let activeDescriptionList = null; // Track the currently active description list
-
-        jsonData.forEach(versionData => {
+        jsonData.forEach((versionData, index) => {
             const versionItem = document.createElement("li");
             versionItem.classList.add("change-item");
+            versionItem.id = `version-${index}`;
 
             const versionHeader = document.createElement("div");
             versionHeader.classList.add("version");
             versionHeader.textContent = versionData.version;
 
-            const descriptionList = document.createElement("ul");
-            descriptionList.classList.add("description-list");
-
-            versionHeader.addEventListener("click", () => {
-                if (activeDescriptionList) {
-                    activeDescriptionList.classList.remove("active");
-                }
-
-                descriptionList.classList.toggle("active");
-                activeDescriptionList = descriptionList;
-            });
-
             versionItem.appendChild(versionHeader);
 
+            const changesList = document.createElement("ul");
             versionData.changes.forEach(change => {
-                const changeDescription = document.createElement("li");
-                changeDescription.classList.add("description");
+                const changeItem = document.createElement("li");
+                changeItem.classList.add("description");
 
                 const badge = document.createElement("span");
-                badge.classList.add("badge");
-
-                switch (change.type) {
-                    case "Added":
-                        badge.classList.add("badge-added");
-                        break;
-                    case "Improved":
-                        badge.classList.add("badge-improved");
-                        break;
-                    case "Fixed":
-                        badge.classList.add("badge-fixed");
-                        break;
-                    case "Updated":
-                        badge.classList.add("badge-update");
-                        break;
-                    case "Re-Design":
-                        badge.classList.add("badge-redesign");
-                        break;
-                    default:
-                        break;
-                }
-
+                badge.classList.add("badge", `badge-${change.type.toLowerCase()}`);
                 badge.textContent = change.type;
 
-                const descriptionText = document.createTextNode(change.description);
+                changeItem.appendChild(badge);
+                changeItem.appendChild(document.createTextNode(change.description));
 
-                changeDescription.appendChild(badge);
-                changeDescription.appendChild(descriptionText);
-
-                descriptionList.appendChild(changeDescription);
+                changesList.appendChild(changeItem);
             });
 
-            versionItem.appendChild(descriptionList);
-
+            versionItem.appendChild(changesList);
             changeList.appendChild(versionItem);
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.scrollup').click(function () {
-                $("html").animate({ scrollTop: 0 }, 1000);
-                return false;
+
+            // Create sidebar item
+            const sidebarItem = document.createElement("div");
+            sidebarItem.classList.add("sidebar-item");
+            sidebarItem.textContent = versionData.version.split(" - ")[0];
+            sidebarItem.addEventListener("click", () => {
+                document.getElementById(`version-${index}`).scrollIntoView({ behavior: "smooth" });
+                sidebar.classList.remove("show"); // Close sidebar on click
+                menuToggle.classList.remove("close"); // Change icon back to hamburger
             });
+            sidebar.appendChild(sidebarItem);
+        });
+
+        // Toggle sidebar visibility on mobile and tablet
+        menuToggle.addEventListener("click", () => {
+            sidebar.classList.toggle("show");
+            menuToggle.classList.toggle("close"); // Toggle between hamburger and close icons
         });
     </script>
-    <div><a href="#" class="scrollup">Scroll</a></div>
 </body>
 
 </html>
