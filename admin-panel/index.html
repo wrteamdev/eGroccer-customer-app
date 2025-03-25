@@ -178,10 +178,11 @@
                 <div style="border-radius: 10px; padding: 10px; margin: 15px 0 15px 0; border: 3px solid red;">
                   <strong style="color: red;">Note:</strong> Be advised that if you do not find the <code>.env</code>
                   file in the root folder, it is necessary to activate the "Unhide hidden files and
-                  folders" option in your settings.
+                  folders" option in your settings.<br/>
+Check the .env file and ensure that INSTALL_MODE=server is set for installation on a live server hosting.
                 </div>
                 <li>Create Database name 'egrocer' and change <code>DB_DATABASE=egrocer</code>
-                  <code>DB_USERNAME=database_user_name</code> <code>DB_PASSWORD=database_user_password</code> in
+                  <code>DB_USERNAME=database_user_name</code> <code>DB_PASSWORD=database_user_password</code> <code>INSTALL_MODE=localhost</code> in
                   <code>.env</code> File.
                 </li>
                 <li>Now, in root directory, run this command <code>composer install</code></li>
