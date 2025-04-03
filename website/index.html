@@ -155,7 +155,7 @@
 								<br>
 
 								<li>
-									Verify npm installation folloeing the way mentioned in point 2 and 3
+									Verify npm installation following the way mentioned in point 2 and 3
 								</li>
 								<br>
 							</ol>
@@ -172,7 +172,7 @@
 									and make sure last slash should not be added in the admin panel url. (Prefer
 									screenshot)</li>
 								<br>
-								<img src="images/change-admin-panel-url.webp" alt="eGrocer" />
+								<img src="images/change-dotenv-file.png" alt="eGrocer" />
 							</ol>
 						</div>
 					</section>
@@ -183,11 +183,22 @@
 							<ol>
 								<li>Open admin panel > Go to Web Settings Menu > General Web Settings</li>
 								<li>You can change theme, website title, website logo form here.(There is more settings
-									as well please explore that whole admin paenl page)</li>
+									as well please explore that whole admin panel page)</li>
 								<li>For handle social media links in website, Open admin panel > Go to Web Settings Menu
 									> Social Media</li>
 								<br>
 								<img src="images/change-website-theme-color.webp" alt="eGrocer" />
+							</ol>
+						</div>
+					</section>
+
+					<section id="changeWebsiteThemeColor">
+						<div class="container"> <br>
+							<h2>How to change website favicon</h2>
+							<ol>
+								<li>Open <code>public</code> folder and replace favicon.ico file with your favicon
+									image.</li>
+								<img src="images/upload-favicon.png" alt="eGrocer" />
 							</ol>
 						</div>
 					</section>
@@ -260,18 +271,18 @@
 								</li>
 								<img src="images/add-domain-for-firebase-otp.webp" alt="eGrocer">
 								<br>
-								<li>
+								<!-- <li>
 									Paste here copied value
 								</li>
 								<br>
 								<img src="images/react-firebase-step7.webp" alt="eGrocer">
-								<br>
-								<li>Add your website url here ot If you are run website in localhost keep it blank
+								<br> -->
+								<!-- <li>Add your website url here ot If you are run website in localhost keep it blank
 									here</li>
 
 								<img src="images/react-firebase-step8.webp" alt="eGrocer">
 
-								<br>
+								<br> -->
 							</ol>
 							<div class="section_bdr"></div>
 						</div>
@@ -290,24 +301,24 @@
 									Open terminal and change your current directory path to the folder which contains
 									package.json file of your react project.
 								</li>
-								<img src="images/react-terminal.webp" alt="eGrocer"><img />
+								<img src="images/nextjs-change-path.png" alt="eGrocer"><img />
 								<br>
 								<li>
 									Now install all the dependencies. For that run a command <code>npm install</code> in
 									your terminal.
 								</li>
-								<img src="images/react-terminal-npm-install.webp" alt="eGrocer"><img />
+								<img src="images/nextjs-install-dep.png" alt="eGrocer"><img />
 								<br>
 								<li>
-									To run the website in your localhost, Run this command <code>npm start</code>
+									To run the website in your localhost, Run this command <code>npm run dev</code>
 								</li>
-								<img src="images/react-terminal-npm-start.webp" alt="eGrocer"><img />
+								<img src="images/nextjs-run-locally.png" alt="eGrocer"><img />
 								<br>
 								<li>
 									Make a build folder of your project. For that run a command
-									<code>npm run build</code>
+									<code>npm run export</code>
 								</li>
-								<img src="images/react-terminal-npm-run-build.webp" alt="eGrocer"><img />
+								<img src="images/nextjs-build-folder.png" alt="eGrocer"><img />
 								<br>
 
 							</ol>
@@ -319,7 +330,22 @@
 					<section id="deploy_website">
 						<div class="container"> <br>
 							<h2>How to deploy website on server?</h2>
-							<ol>
+							<ul>
+								<li>
+									<code>npm run export</code> will create optimize version of web application in
+									<code>out</code> folder. So After the process completion, go to the <code>out</code>
+									folder and upload these files to your live server (only upload files from the out
+									folder).
+								</li>
+								<img src="images/nextjs-out-folder.png" alt="eGrocer"><img />
+								<br>
+							</ul>
+							<div class="web-info-container">
+								If you encounter any deployment-related problems, you can follow the official document:
+								<a href="https://nextjs.org/docs/pages/building-your-application/deploying"
+									target="_blank">Next.js Deployment</a>
+							</div>
+							<!-- <ol>
 								<li>There are two ways to deploy website on server</li>
 								<ol>
 									<li>
@@ -360,7 +386,7 @@
 										</ul>
 									</li>
 								</ol>
-							</ol>
+							</ol> -->
 						</div>
 					</section>
 				</div>
@@ -371,12 +397,12 @@
 					<h2>Need support?</h2>
 					<p>Its our pleasure to serve our service and support. please contact our support team.
 					</p>
-					<p>Head of Customer Support : Mohan<br> Skype: <a href="https://join.skype.com/invite/vIKUkO901sb6"
-							target="_blank" style='color:#3c55d1'>
+					<p>Head of Customer Support : Mohan<br> Teams: <a
+							href="https://teams.live.com/l/invite/FEAUrbWj96fM1FmjwI" target="_blank"
+							style='color:#3c55d1'>
 							Mohan </a><br>
 
 					</p>
-
 					<p>To help our customers, we constantly be in touch with every customer if they need any
 						assistance
 						regarding our product.
@@ -423,11 +449,8 @@
 						</a>
 
 					<p>
-
 					</p>Skype: <a href="https://join.skype.com/invite/vIKUkO901sb6" target="_blank"
 						style='color:#3c55d1'>Mohan</a></p>
-
-
 					</p>
 					<p>Mail Us : support@wrteam.in</p>
 
